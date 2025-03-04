@@ -1,0 +1,3119 @@
+@article{arxiv:REALM:_RAG-Driven_Enhancement_of_Multimodal_Electronic_Health_Records
+__Analysis_via_Large_Language_Models,
+    title = {REALM: RAG-Driven Enhancement of Multimodal Electronic Health Records
+  Analysis via Large Language Models},
+    author = {Yinghao Zhu, Changyu Ren, Shiyun Xie, Shukai Liu, Hangyuan Ji, Zixiang Wang, Tao Sun, Long He, Zhoujun Li, Xi Zhu, Chengwei Pan},
+    abstract = {  The integration of multimodal Electronic Health Records (EHR) data has
+significantly improved clinical predictive capabilities. Leveraging clinical
+notes and multivariate time-series EHR, existing models often lack the medical
+context relevent to clinical tasks, prompting the incorporation of external
+knowledge, particularly from the knowledge graph (KG). Previous approaches with
+KG knowledge have primarily focused on structured knowledge extraction,
+neglecting unstructured data modalities and semantic high dimensional medical
+knowledge. In response, we propose REALM, a Retrieval-Augmented Generation
+(RAG) driven framework to enhance multimodal EHR representations that address
+these limitations. Firstly, we apply Large Language Model (LLM) to encode long
+context clinical notes and GRU model to encode time-series EHR data. Secondly,
+we prompt LLM to extract task-relevant medical entities and match entities in
+professionally labeled external knowledge graph (PrimeKG) with corresponding
+medical knowledge. By matching and aligning with clinical standards, our
+framework eliminates hallucinations and ensures consistency. Lastly, we propose
+an adaptive multimodal fusion network to integrate extracted knowledge with
+multimodal EHR data. Our extensive experiments on MIMIC-III mortality and
+readmission tasks showcase the superior performance of our REALM framework over
+baselines, emphasizing the effectiveness of each module. REALM framework
+contributes to refining the use of multimodal EHR data in healthcare and
+bridging the gap with nuanced medical context essential for informed clinical
+predictions.
+},
+    year = {2024},
+    month = {02},
+    url = {http://arxiv.org/pdf/2402.07016v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:EMERGE:_Enhancing_Multimodal_Electronic_Health_Records_Predictive
+__Modeling_with_Retrieval-Augmented_Generation,
+    title = {EMERGE: Enhancing Multimodal Electronic Health Records Predictive
+  Modeling with Retrieval-Augmented Generation},
+    author = {Yinghao Zhu, Changyu Ren, Zixiang Wang, Xiaochen Zheng, Shiyun Xie, Junlan Feng, Xi Zhu, Zhoujun Li, Liantao Ma, Chengwei Pan},
+    abstract = {  The integration of multimodal Electronic Health Records (EHR) data has
+significantly advanced clinical predictive capabilities. Existing models, which
+utilize clinical notes and multivariate time-series EHR data, often fall short
+of incorporating the necessary medical context for accurate clinical tasks,
+while previous approaches with knowledge graphs (KGs) primarily focus on
+structured knowledge extraction. In response, we propose EMERGE, a
+Retrieval-Augmented Generation (RAG) driven framework to enhance multimodal EHR
+predictive modeling. We extract entities from both time-series data and
+clinical notes by prompting Large Language Models (LLMs) and align them with
+professional PrimeKG, ensuring consistency. In addition to triplet
+relationships, we incorporate entities' definitions and descriptions for richer
+semantics. The extracted knowledge is then used to generate task-relevant
+summaries of patients' health statuses. Finally, we fuse the summary with other
+modalities using an adaptive multimodal fusion network with cross-attention.
+Extensive experiments on the MIMIC-III and MIMIC-IV datasets' in-hospital
+mortality and 30-day readmission tasks demonstrate the superior performance of
+the EMERGE framework over baseline models. Comprehensive ablation studies and
+analysis highlight the efficacy of each designed module and robustness to data
+sparsity. EMERGE contributes to refining the utilization of multimodal EHR data
+in healthcare, bridging the gap with nuanced medical contexts essential for
+informed clinical predictions. We have publicly released the code at
+https://github.com/yhzhu99/EMERGE.
+},
+    year = {2024},
+    month = {05},
+    url = {http://arxiv.org/pdf/2406.00036v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Is_larger_always_better?_Evaluating_and_prompting_large_language_models
+__for_non-generative_medical_tasks,
+    title = {Is larger always better? Evaluating and prompting large language models
+  for non-generative medical tasks},
+    author = {Yinghao Zhu, Junyi Gao, Zixiang Wang, Weibin Liao, Xiaochen Zheng, Lifang Liang, Yasha Wang, Chengwei Pan, Ewen M. Harrison, Liantao Ma},
+    abstract = {  The use of Large Language Models (LLMs) in medicine is growing, but their
+ability to handle both structured Electronic Health Record (EHR) data and
+unstructured clinical notes is not well-studied. This study benchmarks various
+models, including GPT-based LLMs, BERT-based models, and traditional clinical
+predictive models, for non-generative medical tasks utilizing renowned
+datasets. We assessed 14 language models (9 GPT-based and 5 BERT-based) and 7
+traditional predictive models using the MIMIC dataset (ICU patient records) and
+the TJH dataset (early COVID-19 EHR data), focusing on tasks such as mortality
+and readmission prediction, disease hierarchy reconstruction, and biomedical
+sentence matching, comparing both zero-shot and finetuned performance. Results
+indicated that LLMs exhibited robust zero-shot predictive capabilities on
+structured EHR data when using well-designed prompting strategies, frequently
+surpassing traditional models. However, for unstructured medical texts, LLMs
+did not outperform finetuned BERT models, which excelled in both supervised and
+unsupervised tasks. Consequently, while LLMs are effective for zero-shot
+learning on structured data, finetuned BERT models are more suitable for
+unstructured texts, underscoring the importance of selecting models based on
+specific task requirements and data characteristics to optimize the application
+of NLP technology in healthcare.
+},
+    year = {2024},
+    month = {07},
+    url = {http://arxiv.org/pdf/2407.18525v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:EHRmonize:_A_Framework_for_Medical_Concept_Abstraction_from_Electronic
+__Health_Records_using_Large_Language_Models,
+    title = {EHRmonize: A Framework for Medical Concept Abstraction from Electronic
+  Health Records using Large Language Models},
+    author = {João Matos, Jack Gallifant, Jian Pei, A. Ian Wong},
+    abstract = {  Electronic health records (EHRs) contain vast amounts of complex data, but
+harmonizing and processing this information remains a challenging and costly
+task requiring significant clinical expertise. While large language models
+(LLMs) have shown promise in various healthcare applications, their potential
+for abstracting medical concepts from EHRs remains largely unexplored. We
+introduce EHRmonize, a framework leveraging LLMs to abstract medical concepts
+from EHR data. Our study uses medication data from two real-world EHR databases
+to evaluate five LLMs on two free-text extraction and six binary classification
+tasks across various prompting strategies. GPT-4o's with 10-shot prompting
+achieved the highest performance in all tasks, accompanied by Claude-3.5-Sonnet
+in a subset of tasks. GPT-4o achieved an accuracy of 97% in identifying generic
+route names, 82% for generic drug names, and 100% in performing binary
+classification of antibiotics. While EHRmonize significantly enhances
+efficiency, reducing annotation time by an estimated 60%, we emphasize that
+clinician oversight remains essential. Our framework, available as a Python
+package, offers a promising tool to assist clinicians in EHR data abstraction,
+potentially accelerating healthcare research and improving data harmonization
+processes.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2407.00242v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:ColaCare:_Enhancing_Electronic_Health_Record_Modeling_through_Large
+__Language_Model-Driven_Multi-Agent_Collaboration,
+    title = {ColaCare: Enhancing Electronic Health Record Modeling through Large
+  Language Model-Driven Multi-Agent Collaboration},
+    author = {Zixiang Wang, Yinghao Zhu, Huiya Zhao, Xiaochen Zheng, Dehao Sui, Tianlong Wang, Wen Tang, Yasha Wang, Ewen Harrison, Chengwei Pan, Junyi Gao, Liantao Ma},
+    abstract = {  We introduce ColaCare, a framework that enhances Electronic Health Record
+(EHR) modeling through multi-agent collaboration driven by Large Language
+Models (LLMs). Our approach seamlessly integrates domain-specific expert models
+with LLMs to bridge the gap between structured EHR data and text-based
+reasoning. Inspired by the Multidisciplinary Team (MDT) approach used in
+clinical settings, ColaCare employs two types of agents: DoctorAgents and a
+MetaAgent, which collaboratively analyze patient data. Expert models process
+and generate predictions from numerical EHR data, while LLM agents produce
+reasoning references and decision-making reports within the MDT-driven
+collaborative consultation framework. The MetaAgent orchestrates the
+discussion, facilitating consultations and evidence-based debates among
+DoctorAgents, simulating diverse expertise in clinical decision-making. We
+additionally incorporate the Merck Manual of Diagnosis and Therapy (MSD)
+medical guideline within a retrieval-augmented generation (RAG) module for
+medical evidence support, addressing the challenge of knowledge currency.
+Extensive experiments conducted on three EHR datasets demonstrate ColaCare's
+superior performance in clinical mortality outcome and readmission prediction
+tasks, underscoring its potential to revolutionize clinical decision support
+systems and advance personalized precision medicine. All code, case studies and
+a questionnaire are available at the project website:
+https://colacare.netlify.app.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.02551v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Retrospective_Comparative_Analysis_of_Prostate_Cancer_In-Basket
+__Messages:_Responses_from_Closed-Domain_LLM_vs._Clinical_Teams,
+    title = {Retrospective Comparative Analysis of Prostate Cancer In-Basket
+  Messages: Responses from Closed-Domain LLM vs. Clinical Teams},
+    author = {Yuexing Hao, Jason M. Holmes, Jared Hobson, Alexandra Bennett, Daniel K. Ebner, David M. Routman, Satomi Shiraishi, Samir H. Patel, Nathan Y. Yu, Chris L. Hallemeier, Brooke E. Ball, Mark R. Waddle, Wei Liu},
+    abstract = {  In-basket message interactions play a crucial role in physician-patient
+communication, occurring during all phases (pre-, during, and post) of a
+patient's care journey. However, responding to these patients' inquiries has
+become a significant burden on healthcare workflows, consuming considerable
+time for clinical care teams. To address this, we introduce RadOnc-GPT, a
+specialized Large Language Model (LLM) powered by GPT-4 that has been designed
+with a focus on radiotherapeutic treatment of prostate cancer with advanced
+prompt engineering, and specifically designed to assist in generating
+responses. We integrated RadOnc-GPT with patient electronic health records
+(EHR) from both the hospital-wide EHR database and an internal,
+radiation-oncology-specific database. RadOnc-GPT was evaluated on 158
+previously recorded in-basket message interactions. Quantitative natural
+language processing (NLP) analysis and two grading studies with clinicians and
+nurses were used to assess RadOnc-GPT's responses. Our findings indicate that
+RadOnc-GPT slightly outperformed the clinical care team in "Clarity" and
+"Empathy," while achieving comparable scores in "Completeness" and
+"Correctness." RadOnc-GPT is estimated to save 5.2 minutes per message for
+nurses and 2.4 minutes for clinicians, from reading the inquiry to sending the
+response. Employing RadOnc-GPT for in-basket message draft generation has the
+potential to alleviate the workload of clinical care teams and reduce
+healthcare costs by producing high-quality, timely responses.
+},
+    year = {2024},
+    month = {09},
+    url = {http://arxiv.org/pdf/2409.18290v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:A_GEN_AI_Framework_for_Medical_Note_Generation,
+    title = {A GEN AI Framework for Medical Note Generation},
+    author = {Hui Yi Leong, Yi Fan Gao, Shuai Ji, Bora Kalaycioglu, Uktu Pamuksuz},
+    abstract = {  The increasing administrative burden of medical documentation, particularly
+through Electronic Health Records (EHR), significantly reduces the time
+available for direct patient care and contributes to physician burnout. To
+address this issue, we propose MediNotes, an advanced generative AI framework
+designed to automate the creation of SOAP (Subjective, Objective, Assessment,
+Plan) notes from medical conversations. MediNotes integrates Large Language
+Models (LLMs), Retrieval-Augmented Generation (RAG), and Automatic Speech
+Recognition (ASR) to capture and process both text and voice inputs in real
+time or from recorded audio, generating structured and contextually accurate
+medical notes. The framework also incorporates advanced techniques like
+Quantized Low-Rank Adaptation (QLoRA) and Parameter-Efficient Fine-Tuning
+(PEFT) for efficient model fine-tuning in resource-constrained environments.
+Additionally, MediNotes offers a query-based retrieval system, allowing
+healthcare providers and patients to access relevant medical information
+quickly and accurately. Evaluations using the ACI-BENCH dataset demonstrate
+that MediNotes significantly improves the accuracy, efficiency, and usability
+of automated medical documentation, offering a robust solution to reduce the
+administrative burden on healthcare professionals while improving the quality
+of clinical workflows.
+},
+    year = {2024},
+    month = {09},
+    url = {http://arxiv.org/pdf/2410.01841v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:RGAR:_Recurrence_Generation-augmented_Retrieval_for_Factual-aware
+__Medical_Question_Answering,
+    title = {RGAR: Recurrence Generation-augmented Retrieval for Factual-aware
+  Medical Question Answering},
+    author = {Sichu Liang, Linhai Zhang, Hongyu Zhu, Wenwen Wang, Yulan He, Deyu Zhou},
+    abstract = {  Medical question answering requires extensive access to specialized
+conceptual knowledge. The current paradigm, Retrieval-Augmented Generation
+(RAG), acquires expertise medical knowledge through large-scale corpus
+retrieval and uses this knowledge to guide a general-purpose large language
+model (LLM) for generating answers. However, existing retrieval approaches
+often overlook the importance of factual knowledge, which limits the relevance
+of retrieved conceptual knowledge and restricts its applicability in real-world
+scenarios, such as clinical decision-making based on Electronic Health Records
+(EHRs). This paper introduces RGAR, a recurrence generation-augmented retrieval
+framework that retrieves both relevant factual and conceptual knowledge from
+dual sources (i.e., EHRs and the corpus), allowing them to interact and refine
+each another. Through extensive evaluation across three factual-aware medical
+question answering benchmarks, RGAR establishes a new state-of-the-art
+performance among medical RAG systems. Notably, the Llama-3.1-8B-Instruct model
+with RGAR surpasses the considerably larger, RAG-enhanced GPT-3.5. Our findings
+demonstrate the benefit of extracting factual knowledge for retrieval, which
+consistently yields improved generation quality.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.13361v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Classifying_Cancer_Stage_with_Open-Source_Clinical_Large_Language_Models,
+    title = {Classifying Cancer Stage with Open-Source Clinical Large Language Models},
+    author = {Chia-Hsuan Chang, Mary M. Lucas, Grace Lu-Yao, Christopher C. Yang},
+    abstract = {  Cancer stage classification is important for making treatment and care
+management plans for oncology patients. Information on staging is often
+included in unstructured form in clinical, pathology, radiology and other
+free-text reports in the electronic health record system, requiring extensive
+work to parse and obtain. To facilitate the extraction of this information,
+previous NLP approaches rely on labeled training datasets, which are
+labor-intensive to prepare. In this study, we demonstrate that without any
+labeled training data, open-source clinical large language models (LLMs) can
+extract pathologic tumor-node-metastasis (pTNM) staging information from
+real-world pathology reports. Our experiments compare LLMs and a BERT-based
+model fine-tuned using the labeled data. Our findings suggest that while LLMs
+still exhibit subpar performance in Tumor (T) classification, with the
+appropriate adoption of prompting strategies, they can achieve comparable
+performance on Metastasis (M) classification and improved performance on Node
+(N) classification.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.01589v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Lessons_Learned_on_Information_Retrieval_in_Electronic_Health_Records:_A
+__Comparison_of_Embedding_Models_and_Pooling_Strategies,
+    title = {Lessons Learned on Information Retrieval in Electronic Health Records: A
+  Comparison of Embedding Models and Pooling Strategies},
+    author = {Skatje Myers, Timothy A. Miller, Yanjun Gao, Matthew M. Churpek, Anoop Mayampurath, Dmitriy Dligach, Majid Afshar},
+    abstract = {  Objective: Applying large language models (LLMs) to the clinical domain is
+challenging due to the context-heavy nature of processing medical records.
+Retrieval-augmented generation (RAG) offers a solution by facilitating
+reasoning over large text sources. However, there are many parameters to
+optimize in just the retrieval system alone. This paper presents an ablation
+study exploring how different embedding models and pooling methods affect
+information retrieval for the clinical domain.
+  Methods: Evaluating on three retrieval tasks on two electronic health record
+(EHR) data sources, we compared seven models, including medical- and
+general-domain models, specialized encoder embedding models, and off-the-shelf
+decoder LLMs. We also examine the choice of embedding pooling strategy for each
+model, independently on the query and the text to retrieve.
+  Results: We found that the choice of embedding model significantly impacts
+retrieval performance, with BGE, a comparatively small general-domain model,
+consistently outperforming all others, including medical-specific models.
+However, our findings also revealed substantial variability across datasets and
+query text phrasings. We also determined the best pooling methods for each of
+these models to guide future design of retrieval systems.
+  Discussion: The choice of embedding model, pooling strategy, and query
+formulation can significantly impact retrieval performance and the performance
+of these models on other public benchmarks does not necessarily transfer to new
+domains. Further studies such as this one are vital for guiding
+empirically-grounded development of retrieval frameworks, such as in the
+context of RAG, for the clinical domain.
+},
+    year = {2024},
+    month = {09},
+    url = {http://arxiv.org/pdf/2409.15163v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:CancerKG.ORG_A_Web-scale,_Interactive,_Verifiable_Knowledge_Graph-LLM
+__Hybrid_for_Assisting_with_Optimal_Cancer_Treatment_and_Care,
+    title = {CancerKG.ORG A Web-scale, Interactive, Verifiable Knowledge Graph-LLM
+  Hybrid for Assisting with Optimal Cancer Treatment and Care},
+    author = {Michael Gubanov, Anna Pyayt, Aleksandra Karolak},
+    abstract = {  Here, we describe one of the first Web-scale hybrid Knowledge Graph
+(KG)-Large Language Model (LLM), populated with the latest peer-reviewed
+medical knowledge on colorectal Cancer. It is currently being evaluated to
+assist with both medical research and clinical information retrieval tasks at
+Moffitt Cancer Center, which is one of the top Cancer centers in the U.S. and
+in the world. Our hybrid is remarkable as it serves the user needs better than
+just an LLM, KG or a search-engine in isolation. LLMs as is are known to
+exhibit hallucinations and catastrophic forgetting as well as are trained on
+outdated corpora. The state of the art KGs, such as PrimeKG, cBioPortal,
+ChEMBL, NCBI, and other require manual curation, hence are quickly getting
+stale. CancerKG is unsupervised and is capable of automatically ingesting and
+organizing the latest medical findings. To alleviate the LLMs shortcomings, the
+verified KG serves as a Retrieval Augmented Generation (RAG) guardrail.
+CancerKG exhibits 5 different advanced user interfaces, each tailored to serve
+different data modalities better and more convenient for the user.
+},
+    year = {2024},
+    month = {12},
+    url = {http://arxiv.org/pdf/2501.00223v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:AIPatient:_Simulating_Patients_with_EHRs_and_LLM_Powered_Agentic
+__Workflow,
+    title = {AIPatient: Simulating Patients with EHRs and LLM Powered Agentic
+  Workflow},
+    author = {Huizi Yu, Jiayan Zhou, Lingyao Li, Shan Chen, Jack Gallifant, Anye Shi, Xiang Li, Wenyue Hua, Mingyu Jin, Guang Chen, Yang Zhou, Zhao Li, Trisha Gupte, Ming-Li Chen, Zahra Azizi, Yongfeng Zhang, Themistocles L. Assimes, Xin Ma, Danielle S. Bitterman, Lin Lu, Lizhou Fan},
+    abstract = {  Simulated patient systems play a crucial role in modern medical education and
+research, providing safe, integrative learning environments and enabling
+clinical decision-making simulations. Large Language Models (LLM) could advance
+simulated patient systems by replicating medical conditions and patient-doctor
+interactions with high fidelity and low cost. However, ensuring the
+effectiveness and trustworthiness of these systems remains a challenge, as they
+require a large, diverse, and precise patient knowledgebase, along with a
+robust and stable knowledge diffusion to users. Here, we developed AIPatient,
+an advanced simulated patient system with AIPatient Knowledge Graph (AIPatient
+KG) as the input and the Reasoning Retrieval-Augmented Generation (Reasoning
+RAG) agentic workflow as the generation backbone. AIPatient KG samples data
+from Electronic Health Records (EHRs) in the Medical Information Mart for
+Intensive Care (MIMIC)-III database, producing a clinically diverse and
+relevant cohort of 1,495 patients with high knowledgebase validity (F1 0.89).
+Reasoning RAG leverages six LLM powered agents spanning tasks including
+retrieval, KG query generation, abstraction, checker, rewrite, and
+summarization. This agentic framework reaches an overall accuracy of 94.15% in
+EHR-based medical Question Answering (QA), outperforming benchmarks that use
+either no agent or only partial agent integration. Our system also presents
+high readability (median Flesch Reading Ease 77.23; median Flesch Kincaid Grade
+5.6), robustness (ANOVA F-value 0.6126, p>0.1), and stability (ANOVA F-value
+0.782, p>0.1). The promising performance of the AIPatient system highlights its
+potential to support a wide range of applications, including medical education,
+model evaluation, and system integration.
+},
+    year = {2024},
+    month = {09},
+    url = {http://arxiv.org/pdf/2409.18924v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:medIKAL:_Integrating_Knowledge_Graphs_as_Assistants_of_LLMs_for_Enhanced
+__Clinical_Diagnosis_on_EMRs,
+    title = {medIKAL: Integrating Knowledge Graphs as Assistants of LLMs for Enhanced
+  Clinical Diagnosis on EMRs},
+    author = {Mingyi Jia, Junwen Duan, Yan Song, Jianxin Wang},
+    abstract = {  Electronic Medical Records (EMRs), while integral to modern healthcare,
+present challenges for clinical reasoning and diagnosis due to their complexity
+and information redundancy. To address this, we proposed medIKAL (Integrating
+Knowledge Graphs as Assistants of LLMs), a framework that combines Large
+Language Models (LLMs) with knowledge graphs (KGs) to enhance diagnostic
+capabilities. medIKAL assigns weighted importance to entities in medical
+records based on their type, enabling precise localization of candidate
+diseases within KGs. It innovatively employs a residual network-like approach,
+allowing initial diagnosis by the LLM to be merged into KG search results.
+Through a path-based reranking algorithm and a fill-in-the-blank style prompt
+template, it further refined the diagnostic process. We validated medIKAL's
+effectiveness through extensive experiments on a newly introduced open-sourced
+Chinese EMR dataset, demonstrating its potential to improve clinical diagnosis
+in real-world settings.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.14326v3},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:MedRAG:_Enhancing_Retrieval-augmented_Generation_with_Knowledge
+__Graph-Elicited_Reasoning_for_Healthcare_Copilot,
+    title = {MedRAG: Enhancing Retrieval-augmented Generation with Knowledge
+  Graph-Elicited Reasoning for Healthcare Copilot},
+    author = {Xuejiao Zhao, Siyan Liu, Su-Yin Yang, Chunyan Miao},
+    abstract = {  Retrieval-augmented generation (RAG) is a well-suited technique for
+retrieving privacy-sensitive Electronic Health Records (EHR). It can serve as a
+key module of the healthcare copilot, helping reduce misdiagnosis for
+healthcare practitioners and patients. However, the diagnostic accuracy and
+specificity of existing heuristic-based RAG models used in the medical domain
+are inadequate, particularly for diseases with similar manifestations. This
+paper proposes MedRAG, a RAG model enhanced by knowledge graph (KG)-elicited
+reasoning for the medical domain that retrieves diagnosis and treatment
+recommendations based on manifestations. MedRAG systematically constructs a
+comprehensive four-tier hierarchical diagnostic KG encompassing critical
+diagnostic differences of various diseases. These differences are dynamically
+integrated with similar EHRs retrieved from an EHR database, and reasoned
+within a large language model. This process enables more accurate and specific
+decision support, while also proactively providing follow-up questions to
+enhance personalized medical decision-making. MedRAG is evaluated on both a
+public dataset DDXPlus and a private chronic pain diagnostic dataset (CPDD)
+collected from Tan Tock Seng Hospital, and its performance is compared against
+various existing RAG methods. Experimental results show that, leveraging the
+information integration and relational abilities of the KG, our MedRAG provides
+more specific diagnostic insights and outperforms state-of-the-art models in
+reducing misdiagnosis rates. Our code will be available at
+https://github.com/SNOWTEAM2023/MedRAG
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.04413v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:DualMAR:_Medical-Augmented_Representation_from_Dual-Expertise
+__Perspectives,
+    title = {DualMAR: Medical-Augmented Representation from Dual-Expertise
+  Perspectives},
+    author = {Pengfei Hu, Chang Lu, Fei Wang, Yue Ning},
+    abstract = {  Electronic Health Records (EHR) has revolutionized healthcare data management
+and prediction in the field of AI and machine learning. Accurate predictions of
+diagnosis and medications significantly mitigate health risks and provide
+guidance for preventive care. However, EHR driven models often have limited
+scope on understanding medical-domain knowledge and mostly rely on
+simple-and-sole ontologies. In addition, due to the missing features and
+incomplete disease coverage of EHR, most studies only focus on basic analysis
+on conditions and medication. We propose DualMAR, a framework that enhances EHR
+prediction tasks through both individual observation data and public knowledge
+bases. First, we construct a bi-hierarchical Diagnosis Knowledge Graph (KG)
+using verified public clinical ontologies and augment this KG via Large
+Language Models (LLMs); Second, we design a new proxy-task learning on lab
+results in EHR for pretraining, which further enhance KG representation and
+patient embeddings. By retrieving radial and angular coordinates upon polar
+space, DualMAR enables accurate predictions based on rich hierarchical and
+semantic embeddings from KG. Experiments also demonstrate that DualMAR
+outperforms state-of-the-art models, validating its effectiveness in EHR
+prediction and KG integration in medical domains.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.19955v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Question-Answering_Based_Summarization_of_Electronic_Health_Records
+__using_Retrieval_Augmented_Generation,
+    title = {Question-Answering Based Summarization of Electronic Health Records
+  using Retrieval Augmented Generation},
+    author = {Walid Saba, Suzanne Wendelken, James. Shanahan},
+    abstract = {  Summarization of electronic health records (EHRs) can substantially minimize
+'screen time' for both patients as well as medical personnel. In recent years
+summarization of EHRs have employed machine learning pipelines using state of
+the art neural models. However, these models have produced less than adequate
+results that are attributed to the difficulty of obtaining sufficient annotated
+data for training. Moreover, the requirement to consider the entire content of
+an EHR in summarization has resulted in poor performance due to the fact that
+attention mechanisms in modern large language models (LLMs) adds a quadratic
+complexity in terms of the size of the input. We propose here a method that
+mitigates these shortcomings by combining semantic search, retrieval augmented
+generation (RAG) and question-answering using the latest LLMs. In our approach
+summarization is the extraction of answers to specific questions that are
+deemed important by subject-matter experts (SMEs). Our approach is quite
+efficient; requires minimal to no training; does not suffer from the
+'hallucination' problem of LLMs; and it ensures diversity, since the summary
+will not have repeated content but diverse answers to specific questions.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2401.01469v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Automated_radiotherapy_treatment_planning_guided_by_GPT-4Vision,
+    title = {Automated radiotherapy treatment planning guided by GPT-4Vision},
+    author = {Sheng Liu, Oscar Pastor-Serrano, Yizheng Chen, Matthew Gopaulchan, Weixing Liang, Mark Buyyounouski, Erqi Pollom, Quynh-Thu Le, Michael Gensheimer, Peng Dong, Yong Yang, James Zou, Lei Xing},
+    abstract = {  Radiotherapy treatment planning is a time-consuming and potentially
+subjective process that requires the iterative adjustment of model parameters
+to balance multiple conflicting objectives. Recent advancements in large
+foundation models offer promising avenues for addressing the challenges in
+planning and clinical decision-making. This study introduces GPT-RadPlan, a
+fully automated treatment planning framework that harnesses prior radiation
+oncology knowledge encoded in multi-modal large language models, such as
+GPT-4Vision (GPT-4V) from OpenAI. GPT-RadPlan is made aware of planning
+protocols as context and acts as an expert human planner, capable of guiding a
+treatment planning process. Via in-context learning, we incorporate clinical
+protocols for various disease sites as prompts to enable GPT-4V to acquire
+treatment planning domain knowledge. The resulting GPT-RadPlan agent is
+integrated into our in-house inverse treatment planning system through an API.
+The efficacy of the automated planning system is showcased using multiple
+prostate and head & neck cancer cases, where we compared GPT-RadPlan results to
+clinical plans. In all cases, GPT-RadPlan either outperformed or matched the
+clinical plans, demonstrating superior target coverage and organ-at-risk
+sparing. Consistently satisfying the dosimetric objectives in the clinical
+protocol, GPT-RadPlan represents the first multimodal large language model
+agent that mimics the behaviors of human planners in radiation oncology
+clinics, achieving remarkable results in automating the treatment planning
+process without the need for additional training.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.15609v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:GAMedX:_Generative_AI-based_Medical_Entity_Data_Extractor_Using_Large
+__Language_Models,
+    title = {GAMedX: Generative AI-based Medical Entity Data Extractor Using Large
+  Language Models},
+    author = {Mohammed-Khalil Ghali, Abdelrahman Farrag, Hajar Sakai, Hicham El Baz, Yu Jin, Sarah Lam},
+    abstract = {  In the rapidly evolving field of healthcare and beyond, the integration of
+generative AI in Electronic Health Records (EHRs) represents a pivotal
+advancement, addressing a critical gap in current information extraction
+techniques. This paper introduces GAMedX, a Named Entity Recognition (NER)
+approach utilizing Large Language Models (LLMs) to efficiently extract entities
+from medical narratives and unstructured text generated throughout various
+phases of the patient hospital visit. By addressing the significant challenge
+of processing unstructured medical text, GAMedX leverages the capabilities of
+generative AI and LLMs for improved data extraction. Employing a unified
+approach, the methodology integrates open-source LLMs for NER, utilizing
+chained prompts and Pydantic schemas for structured output to navigate the
+complexities of specialized medical jargon. The findings reveal significant
+ROUGE F1 score on one of the evaluation datasets with an accuracy of 98\%. This
+innovation enhances entity extraction, offering a scalable, cost-effective
+solution for automated forms filling from unstructured data. As a result,
+GAMedX streamlines the processing of unstructured narratives, and sets a new
+standard in NER applications, contributing significantly to theoretical and
+practical advancements beyond the medical technology sphere.
+},
+    year = {2024},
+    month = {05},
+    url = {http://arxiv.org/pdf/2405.20585v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Application_of_NotebookLM,_a_Large_Language_Model_with
+__Retrieval-Augmented_Generation,_for_Lung_Cancer_Staging,
+    title = {Application of NotebookLM, a Large Language Model with
+  Retrieval-Augmented Generation, for Lung Cancer Staging},
+    author = {Ryota Tozuka, Hisashi Johno, Akitomo Amakawa, Junichi Sato, Mizuki Muto, Shoichiro Seki, Atsushi Komaba, Hiroshi Onishi},
+    abstract = {  Purpose: In radiology, large language models (LLMs), including ChatGPT, have
+recently gained attention, and their utility is being rapidly evaluated.
+However, concerns have emerged regarding their reliability in clinical
+applications due to limitations such as hallucinations and insufficient
+referencing. To address these issues, we focus on the latest technology,
+retrieval-augmented generation (RAG), which enables LLMs to reference reliable
+external knowledge (REK). Specifically, this study examines the utility and
+reliability of a recently released RAG-equipped LLM (RAG-LLM), NotebookLM, for
+staging lung cancer.
+  Materials and methods: We summarized the current lung cancer staging
+guideline in Japan and provided this as REK to NotebookLM. We then tasked
+NotebookLM with staging 100 fictional lung cancer cases based on CT findings
+and evaluated its accuracy. For comparison, we performed the same task using a
+gold-standard LLM, GPT-4 Omni (GPT-4o), both with and without the REK.
+  Results: NotebookLM achieved 86% diagnostic accuracy in the lung cancer
+staging experiment, outperforming GPT-4o, which recorded 39% accuracy with the
+REK and 25% without it. Moreover, NotebookLM demonstrated 95% accuracy in
+searching reference locations within the REK.
+  Conclusion: NotebookLM successfully performed lung cancer staging by
+utilizing the REK, demonstrating superior performance compared to GPT-4o.
+Additionally, it provided highly accurate reference locations within the REK,
+allowing radiologists to efficiently evaluate the reliability of NotebookLM's
+responses and detect possible hallucinations. Overall, this study highlights
+the potential of NotebookLM, a RAG-LLM, in image diagnosis.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.10869v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Towards_Efficient_Patient_Recruitment_for_Clinical_Trials:_Application
+__of_a_Prompt-Based_Learning_Model,
+    title = {Towards Efficient Patient Recruitment for Clinical Trials: Application
+  of a Prompt-Based Learning Model},
+    author = {Mojdeh Rahmanian, Seyed Mostafa Fakhrahmad, Seyedeh Zahra Mousavi},
+    abstract = {  Objective: Clinical trials are essential for advancing pharmaceutical
+interventions, but they face a bottleneck in selecting eligible participants.
+Although leveraging electronic health records (EHR) for recruitment has gained
+popularity, the complex nature of unstructured medical texts presents
+challenges in efficiently identifying participants. Natural Language Processing
+(NLP) techniques have emerged as a solution with a recent focus on transformer
+models. In this study, we aimed to evaluate the performance of a prompt-based
+large language model for the cohort selection task from unstructured medical
+notes collected in the EHR. Methods: To process the medical records, we
+selected the most related sentences of the records to the eligibility criteria
+needed for the trial. The SNOMED CT concepts related to each eligibility
+criterion were collected. Medical records were also annotated with MedCAT based
+on the SNOMED CT ontology. Annotated sentences including concepts matched with
+the criteria-relevant terms were extracted. A prompt-based large language model
+(Generative Pre-trained Transformer (GPT) in this study) was then used with the
+extracted sentences as the training set. To assess its effectiveness, we
+evaluated the model's performance using the dataset from the 2018 n2c2
+challenge, which aimed to classify medical records of 311 patients based on 13
+eligibility criteria through NLP techniques. Results: Our proposed model showed
+the overall micro and macro F measures of 0.9061 and 0.8060 which were among
+the highest scores achieved by the experiments performed with this dataset.
+Conclusion: The application of a prompt-based large language model in this
+study to classify patients based on eligibility criteria received promising
+scores. Besides, we proposed a method of extractive summarization with the aid
+of SNOMED CT ontology that can be also applied to other medical texts.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.16198v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Generating_patient_cohorts_from_electronic_health_records_using_two-step
+__retrieval-augmented_text-to-SQL_generation,
+    title = {Generating patient cohorts from electronic health records using two-step
+  retrieval-augmented text-to-SQL generation},
+    author = {Angelo Ziletti, Leonardo D'Ambrosi},
+    abstract = {  Clinical cohort definition is crucial for patient recruitment and
+observational studies, yet translating inclusion/exclusion criteria into SQL
+queries remains challenging and manual. We present an automated system
+utilizing large language models that combines criteria parsing, two-level
+retrieval augmented generation with specialized knowledge bases, medical
+concept standardization, and SQL generation to retrieve patient cohorts with
+patient funnels. The system achieves 0.75 F1-score in cohort identification on
+EHR data, effectively capturing complex temporal and logical relationships.
+These results demonstrate the feasibility of automated cohort generation for
+epidemiological research.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.21107v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Developing_an_Artificial_Intelligence_Tool_for_Personalized_Breast
+__Cancer_Treatment_Plans_based_on_the_NCCN_Guidelines,
+    title = {Developing an Artificial Intelligence Tool for Personalized Breast
+  Cancer Treatment Plans based on the NCCN Guidelines},
+    author = {Abdul M. Mohammed, Iqtidar Mansoor, Sarah Blythe, Dennis Trujillo},
+    abstract = {  Cancer treatments require personalized approaches based on a patient's
+clinical condition, medical history, and evidence-based guidelines. The
+National Comprehensive Cancer Network (NCCN) provides frequently updated,
+complex guidelines through visuals like flowcharts and diagrams, which can be
+time consuming for oncologists to stay current with treatment protocols. This
+study presents an AI (Artificial Intelligence)-driven methodology to accurately
+automate treatment regimens following NCCN guidelines for breast cancer
+patients.
+  We proposed two AI-driven methods: Agentic-RAG (Retrieval-Augmented
+Generation) and Graph-RAG. Agentic-RAG used a three-step Large Language Model
+(LLM) process to select clinical titles from NCCN guidelines, retrieve matching
+JSON content, and iteratively refine recommendations based on insufficiency
+checks. Graph-RAG followed a Microsoft-developed framework with proprietary
+prompts, where JSON data was converted to text via an LLM, summarized, and
+mapped into graph structures representing key treatment relationships. Final
+recommendations were generated by querying relevant graph summaries. Both were
+evaluated using a set of patient descriptions, each with four associated
+questions.
+  As shown in Table 1, Agentic RAG achieved a 100% adherence (24/24) with no
+hallucinations or incorrect treatments. Graph-RAG had 95.8% adherence (23/24)
+with one incorrect treatment and no hallucinations. Chat GPT-4 showed 91.6%
+adherence (22/24) with two wrong treatments and no hallucinations. Both Agentic
+RAG and Graph-RAG provided detailed treatment recommendations with accurate
+references to relevant NCCN document page numbers.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2502.15698v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Accuracy_and_Consistency_of_LLMs_in_the_Registered_Dietitian_Exam:_The
+__Impact_of_Prompt_Engineering_and_Knowledge_Retrieval,
+    title = {Accuracy and Consistency of LLMs in the Registered Dietitian Exam: The
+  Impact of Prompt Engineering and Knowledge Retrieval},
+    author = {Iman Azimi, Mohan Qi, Li Wang, Amir M. Rahmani, Youlin Li},
+    abstract = {  Large language models (LLMs) are fundamentally transforming human-facing
+applications in the health and well-being domains: boosting patient engagement,
+accelerating clinical decision-making, and facilitating medical education.
+Although state-of-the-art LLMs have shown superior performance in several
+conversational applications, evaluations within nutrition and diet applications
+are still insufficient. In this paper, we propose to employ the Registered
+Dietitian (RD) exam to conduct a standard and comprehensive evaluation of
+state-of-the-art LLMs, GPT-4o, Claude 3.5 Sonnet, and Gemini 1.5 Pro, assessing
+both accuracy and consistency in nutrition queries. Our evaluation includes
+1050 RD exam questions encompassing several nutrition topics and proficiency
+levels. In addition, for the first time, we examine the impact of Zero-Shot
+(ZS), Chain of Thought (CoT), Chain of Thought with Self Consistency (CoT-SC),
+and Retrieval Augmented Prompting (RAP) on both accuracy and consistency of the
+responses. Our findings revealed that while these LLMs obtained acceptable
+overall performance, their results varied considerably with different prompts
+and question domains. GPT-4o with CoT-SC prompting outperformed the other
+approaches, whereas Gemini 1.5 Pro with ZS recorded the highest consistency.
+For GPT-4o and Claude 3.5, CoT improved the accuracy, and CoT-SC improved both
+accuracy and consistency. RAP was particularly effective for GPT-4o to answer
+Expert level questions. Consequently, choosing the appropriate LLM and
+prompting technique, tailored to the proficiency level and specific domain, can
+mitigate errors and potential risks in diet and nutrition chatbots.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.02964v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Hybrid_Student-Teacher_Large_Language_Model_Refinement_for_Cancer
+__Toxicity_Symptom_Extraction,
+    title = {Hybrid Student-Teacher Large Language Model Refinement for Cancer
+  Toxicity Symptom Extraction},
+    author = {Reza Khanmohammadi, Ahmed I. Ghanem, Kyle Verdecchia, Ryan Hall, Mohamed Elshaikh, Benjamin Movsas, Hassan Bagher-Ebadian, Bing Luo, Indrin J. Chetty, Tuka Alhanai, Kundan Thind, Mohammad M. Ghassemi},
+    abstract = {  Large Language Models (LLMs) offer significant potential for clinical symptom
+extraction, but their deployment in healthcare settings is constrained by
+privacy concerns, computational limitations, and operational costs. This study
+investigates the optimization of compact LLMs for cancer toxicity symptom
+extraction using a novel iterative refinement approach. We employ a
+student-teacher architecture, utilizing Zephyr-7b-beta and Phi3-mini-128 as
+student models and GPT-4o as the teacher, to dynamically select between prompt
+refinement, Retrieval-Augmented Generation (RAG), and fine-tuning strategies.
+Our experiments on 294 clinical notes covering 12 post-radiotherapy toxicity
+symptoms demonstrate the effectiveness of this approach. The RAG method proved
+most efficient, improving average accuracy scores from 0.32 to 0.73 for
+Zephyr-7b-beta and from 0.40 to 0.87 for Phi3-mini-128 during refinement. In
+the test set, both models showed an approximate 0.20 increase in accuracy
+across symptoms. Notably, this improvement was achieved at a cost 45 times
+lower than GPT-4o for Zephyr and 79 times lower for Phi-3. These results
+highlight the potential of iterative refinement techniques in enhancing the
+capabilities of compact LLMs for clinical applications, offering a balance
+between performance, cost-effectiveness, and privacy preservation in healthcare
+settings.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.04775v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:GraphCare:_Enhancing_Healthcare_Predictions_with_Personalized_Knowledge
+__Graphs,
+    title = {GraphCare: Enhancing Healthcare Predictions with Personalized Knowledge
+  Graphs},
+    author = {Pengcheng Jiang, Cao Xiao, Adam Cross, Jimeng Sun},
+    abstract = {  Clinical predictive models often rely on patients' electronic health records
+(EHR), but integrating medical knowledge to enhance predictions and
+decision-making is challenging. This is because personalized predictions
+require personalized knowledge graphs (KGs), which are difficult to generate
+from patient EHR data. To address this, we propose \textsc{GraphCare}, an
+open-world framework that uses external KGs to improve EHR-based predictions.
+Our method extracts knowledge from large language models (LLMs) and external
+biomedical KGs to build patient-specific KGs, which are then used to train our
+proposed Bi-attention AugmenTed (BAT) graph neural network (GNN) for healthcare
+predictions. On two public datasets, MIMIC-III and MIMIC-IV, \textsc{GraphCare}
+surpasses baselines in four vital healthcare prediction tasks: mortality,
+readmission, length of stay (LOS), and drug recommendation. On MIMIC-III, it
+boosts AUROC by 17.6\% and 6.6\% for mortality and readmission, and F1-score by
+7.9\% and 10.8\% for LOS and drug recommendation, respectively. Notably,
+\textsc{GraphCare} demonstrates a substantial edge in scenarios with limited
+data availability. Our findings highlight the potential of using external KGs
+in healthcare prediction tasks and demonstrate the promise of
+\textsc{GraphCare} in generating personalized KGs for promoting personalized
+medicine.
+},
+    year = {2023},
+    month = {05},
+    url = {http://arxiv.org/pdf/2305.12788v3},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:VeriFact:_Verifying_Facts_in_LLM-Generated_Clinical_Text_with_Electronic
+__Health_Records,
+    title = {VeriFact: Verifying Facts in LLM-Generated Clinical Text with Electronic
+  Health Records},
+    author = {Philip Chung, Akshay Swaminathan, Alex J. Goodell, Yeasul Kim, S. Momsen Reincke, Lichy Han, Ben Deverett, Mohammad Amin Sadeghi, Abdel-Badih Ariss, Marc Ghanem, David Seong, Andrew A. Lee, Caitlin E. Coombes, Brad Bradshaw, Mahir A. Sufian, Hyo Jung Hong, Teresa P. Nguyen, Mohammad R. Rasouli, Komal Kamra, Mark A. Burbridge, James C. McAvoy, Roya Saffary, Stephen P. Ma, Dev Dash, James Xie, Ellen Y. Wang, Clifford A. Schmiesing, Nigam Shah, Nima Aghaeepour},
+    abstract = {  Methods to ensure factual accuracy of text generated by large language models
+(LLM) in clinical medicine are lacking. VeriFact is an artificial intelligence
+system that combines retrieval-augmented generation and LLM-as-a-Judge to
+verify whether LLM-generated text is factually supported by a patient's medical
+history based on their electronic health record (EHR). To evaluate this system,
+we introduce VeriFact-BHC, a new dataset that decomposes Brief Hospital Course
+narratives from discharge summaries into a set of simple statements with
+clinician annotations for whether each statement is supported by the patient's
+EHR clinical notes. Whereas highest agreement between clinicians was 88.5%,
+VeriFact achieves up to 92.7% agreement when compared to a denoised and
+adjudicated average human clinican ground truth, suggesting that VeriFact
+exceeds the average clinician's ability to fact-check text against a patient's
+medical record. VeriFact may accelerate the development of LLM-based EHR
+applications by removing current evaluation bottlenecks.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2501.16672v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:When_Raw_Data_Prevails:_Are_Large_Language_Model_Embeddings_Effective_in
+__Numerical_Data_Representation_for_Medical_Machine_Learning_Applications?,
+    title = {When Raw Data Prevails: Are Large Language Model Embeddings Effective in
+  Numerical Data Representation for Medical Machine Learning Applications?},
+    author = {Yanjun Gao, Skatje Myers, Shan Chen, Dmitriy Dligach, Timothy A Miller, Danielle Bitterman, Matthew Churpek, Majid Afshar},
+    abstract = {  The introduction of Large Language Models (LLMs) has advanced data
+representation and analysis, bringing significant progress in their use for
+medical questions and answering. Despite these advancements, integrating
+tabular data, especially numerical data pivotal in clinical contexts, into LLM
+paradigms has not been thoroughly explored. In this study, we examine the
+effectiveness of vector representations from last hidden states of LLMs for
+medical diagnostics and prognostics using electronic health record (EHR) data.
+We compare the performance of these embeddings with that of raw numerical EHR
+data when used as feature inputs to traditional machine learning (ML)
+algorithms that excel at tabular data learning, such as eXtreme Gradient
+Boosting. We focus on instruction-tuned LLMs in a zero-shot setting to
+represent abnormal physiological data and evaluating their utilities as feature
+extractors to enhance ML classifiers for predicting diagnoses, length of stay,
+and mortality. Furthermore, we examine prompt engineering techniques on
+zero-shot and few-shot LLM embeddings to measure their impact comprehensively.
+Although findings suggest the raw data features still prevails in medical ML
+tasks, zero-shot LLM embeddings demonstrate competitive results, suggesting a
+promising avenue for future research in medical applications.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.11854v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Universal_Abstraction:_Harnessing_Frontier_Models_to_Structure
+__Real-World_Data_at_Scale,
+    title = {Universal Abstraction: Harnessing Frontier Models to Structure
+  Real-World Data at Scale},
+    author = {Cliff Wong, Sam Preston, Qianchu Liu, Zelalem Gero, Jass Bagga, Sheng Zhang, Shrey Jain, Theodore Zhao, Yu Gu, Yanbo Xu, Sid Kiblawi, Roshanthi Weerasinghe, Rom Leidner, Kristina Young, Brian Piening, Carlo Bifulco, Tristan Naumann, Mu Wei, Hoifung Poon},
+    abstract = {  The vast majority of real-world patient information resides in unstructured
+clinical text, and the process of medical abstraction seeks to extract and
+normalize structured information from this unstructured input. However,
+traditional medical abstraction methods can require significant manual efforts
+that can include crafting rules or annotating training labels, limiting
+scalability. In this paper, we propose UniMedAbstractor (UMA), a zero-shot
+medical abstraction framework leveraging Large Language Models (LLMs) through a
+modular and customizable prompt template. We refer to our approach as universal
+abstraction as it can quickly scale to new attributes through its universal
+prompt template without curating attribute-specific training labels or rules.
+We evaluate UMA for oncology applications, focusing on fifteen key attributes
+representing the cancer patient journey, from short-context attributes (e.g.,
+performance status, treatment) to complex long-context attributes requiring
+longitudinal reasoning (e.g., tumor site, histology, TNM staging). Experiments
+on real-world data show UMA's strong performance and generalizability. Compared
+to supervised and heuristic baselines, UMA with GPT-4o achieves on average an
+absolute 2-point F1/accuracy improvement for both short-context and
+long-context attribute abstraction. For pathologic T staging, UMA even
+outperforms the supervised model by 20 points in accuracy.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.00943v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Improving_Retrieval-Augmented_Generation_in_Medicine_with_Iterative
+__Follow-up_Questions,
+    title = {Improving Retrieval-Augmented Generation in Medicine with Iterative
+  Follow-up Questions},
+    author = {Guangzhi Xiong, Qiao Jin, Xiao Wang, Minjia Zhang, Zhiyong Lu, Aidong Zhang},
+    abstract = {  The emergent abilities of large language models (LLMs) have demonstrated
+great potential in solving medical questions. They can possess considerable
+medical knowledge, but may still hallucinate and are inflexible in the
+knowledge updates. While Retrieval-Augmented Generation (RAG) has been proposed
+to enhance the medical question-answering capabilities of LLMs with external
+knowledge bases, it may still fail in complex cases where multiple rounds of
+information-seeking are required. To address such an issue, we propose
+iterative RAG for medicine (i-MedRAG), where LLMs can iteratively ask follow-up
+queries based on previous information-seeking attempts. In each iteration of
+i-MedRAG, the follow-up queries will be answered by a conventional RAG system
+and they will be further used to guide the query generation in the next
+iteration. Our experiments show the improved performance of various LLMs
+brought by i-MedRAG compared with conventional RAG on complex questions from
+clinical vignettes in the United States Medical Licensing Examination (USMLE),
+as well as various knowledge tests in the Massive Multitask Language
+Understanding (MMLU) dataset. Notably, our zero-shot i-MedRAG outperforms all
+existing prompt engineering and fine-tuning methods on GPT-3.5, achieving an
+accuracy of 69.68% on the MedQA dataset. In addition, we characterize the
+scaling properties of i-MedRAG with different iterations of follow-up queries
+and different numbers of queries per iteration. Our case studies show that
+i-MedRAG can flexibly ask follow-up queries to form reasoning chains, providing
+an in-depth analysis of medical questions. To the best of our knowledge, this
+is the first-of-its-kind study on incorporating follow-up queries into medical
+RAG. The implementation of i-MedRAG is available at
+https://github.com/Teddy-XiongGZ/MedRAG.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.00727v3},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Large_Language_Models_for_Biomedical_Knowledge_Graph_Construction:
+__Information_extraction_from_EMR_notes,
+    title = {Large Language Models for Biomedical Knowledge Graph Construction:
+  Information extraction from EMR notes},
+    author = {Vahan Arsenyan, Spartak Bughdaryan, Fadi Shaya, Kent Small, Davit Shahnazaryan},
+    abstract = {  The automatic construction of knowledge graphs (KGs) is an important research
+area in medicine, with far-reaching applications spanning drug discovery and
+clinical trial design. These applications hinge on the accurate identification
+of interactions among medical and biological entities. In this study, we
+propose an end-to-end machine learning solution based on large language models
+(LLMs) that utilize electronic medical record notes to construct KGs. The
+entities used in the KG construction process are diseases, factors, treatments,
+as well as manifestations that coexist with the patient while experiencing the
+disease. Given the critical need for high-quality performance in medical
+applications, we embark on a comprehensive assessment of 12 LLMs of various
+architectures, evaluating their performance and safety attributes. To gauge the
+quantitative efficacy of our approach by assessing both precision and recall,
+we manually annotate a dataset provided by the Macula and Retina Institute. We
+also assess the qualitative performance of LLMs, such as the ability to
+generate structured outputs or the tendency to hallucinate. The results
+illustrate that in contrast to encoder-only and encoder-decoder, decoder-only
+LLMs require further investigation. Additionally, we provide guided prompt
+design to utilize such LLMs. The application of the proposed methodology is
+demonstrated on age-related macular degeneration.
+},
+    year = {2023},
+    month = {01},
+    url = {http://arxiv.org/pdf/2301.12473v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Leveraging_Medical_Knowledge_Graphs_Into_Large_Language_Models_for
+__Diagnosis_Prediction:_Design_and_Application_Study,
+    title = {Leveraging Medical Knowledge Graphs Into Large Language Models for
+  Diagnosis Prediction: Design and Application Study},
+    author = {Yanjun Gao, Ruizhe Li, Emma Croxford, John Caskey, Brian W Patterson, Matthew Churpek, Timothy Miller, Dmitriy Dligach, Majid Afshar},
+    abstract = {  Electronic Health Records (EHRs) and routine documentation practices play a
+vital role in patients' daily care, providing a holistic record of health,
+diagnoses, and treatment. However, complex and verbose EHR narratives overload
+healthcare providers, risking diagnostic inaccuracies. While Large Language
+Models (LLMs) have showcased their potential in diverse language tasks, their
+application in the healthcare arena needs to ensure the minimization of
+diagnostic errors and the prevention of patient harm. In this paper, we outline
+an innovative approach for augmenting the proficiency of LLMs in the realm of
+automated diagnosis generation, achieved through the incorporation of a medical
+knowledge graph (KG) and a novel graph model: Dr.Knows, inspired by the
+clinical diagnostic reasoning process. We derive the KG from the National
+Library of Medicine's Unified Medical Language System (UMLS), a robust
+repository of biomedical knowledge. Our method negates the need for
+pre-training and instead leverages the KG as an auxiliary instrument aiding in
+the interpretation and summarization of complex medical concepts. Using
+real-world hospital datasets, our experimental results demonstrate that the
+proposed approach of combining LLMs with KG has the potential to improve the
+accuracy of automated diagnosis generation. More importantly, our approach
+offers an explainable diagnostic pathway, edging us closer to the realization
+of AI-augmented diagnostic decision support systems.
+},
+    year = {2023},
+    month = {08},
+    url = {http://arxiv.org/pdf/2308.14321v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:CMQCIC-Bench:_A_Chinese_Benchmark_for_Evaluating_Large_Language_Models
+__in_Medical_Quality_Control_Indicator_Calculation,
+    title = {CMQCIC-Bench: A Chinese Benchmark for Evaluating Large Language Models
+  in Medical Quality Control Indicator Calculation},
+    author = {Guangya Yu, Yanhao Li, Zongying Jiang, Yuxiong Jin, Li Dai, Yupian Lin, Ruihui Hou, Weiyan Zhang, Yongqi Fan, Qi Ye, Jingping Liu, Tong Ruan},
+    abstract = {  Medical quality control indicators are essential to assess the qualifications
+of healthcare institutions for medical services. With the impressive
+performance of large language models (LLMs) like GPT-4 in the medical field,
+leveraging these technologies for the Medical Quality Control Indicator
+Calculation (MQCIC) presents a promising approach. In this work, (1) we
+introduce a real-world task MQCIC and propose an open-source Chinese electronic
+medical records (EMRs)-based dataset (CMQCIC-Bench) comprising 785 instances
+and 76 indicators. (2) We propose a semi-automatic method to enhance the rule
+representation. Then we propose the Clinical Facts-based Inferential Rule
+(CF-IR) method that disentangles the clinical fact verification and inferential
+rule reasoning actions. (3) We conduct comprehensive experiments on 20
+representative LLMs, covering general and medical models. Our findings reveal
+that CF-IR outperforms Chain-of-Thought methods in MQCIC tasks. (4) We conduct
+an error analysis and investigate the capabilities of clinical fact
+verification and inferential rule reasoning, providing insights to improve
+performance in the MQCIC further. The dataset and code is available in this
+repo https://anonymous.4open.science/r/C-MQCIC-1151.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.11703v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Onco-Retriever:_Generative_Classifier_for_Retrieval_of_EHR_Records_in
+__Oncology,
+    title = {Onco-Retriever: Generative Classifier for Retrieval of EHR Records in
+  Oncology},
+    author = {Shashi Kant Gupta, Aditya Basu, Bradley Taylor, Anai Kothari, Hrituraj Singh},
+    abstract = {  Retrieving information from EHR systems is essential for answering specific
+questions about patient journeys and improving the delivery of clinical care.
+Despite this fact, most EHR systems still rely on keyword-based searches. With
+the advent of generative large language models (LLMs), retrieving information
+can lead to better search and summarization capabilities. Such retrievers can
+also feed Retrieval-augmented generation (RAG) pipelines to answer any query.
+However, the task of retrieving information from EHR real-world clinical data
+contained within EHR systems in order to solve several downstream use cases is
+challenging due to the difficulty in creating query-document support pairs. We
+provide a blueprint for creating such datasets in an affordable manner using
+large language models. Our method results in a retriever that is 30-50 F-1
+points better than propriety counterparts such as Ada and Mistral for oncology
+data elements. We further compare our model, called Onco-Retriever, against
+fine-tuned PubMedBERT model as well. We conduct an extensive manual evaluation
+on real-world EHR data along with latency analysis of the different models and
+provide a path forward for healthcare organizations to build domain-specific
+retrievers.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.06680v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:KG-MTT-BERT:_Knowledge_Graph_Enhanced_BERT_for_Multi-Type_Medical_Text
+__Classification,
+    title = {KG-MTT-BERT: Knowledge Graph Enhanced BERT for Multi-Type Medical Text
+  Classification},
+    author = {Yong He, Cheng Wang, Shun Zhang, Nan Li, Zhaorong Li, Zhenyu Zeng},
+    abstract = {  Medical text learning has recently emerged as a promising area to improve
+healthcare due to the wide adoption of electronic health record (EHR) systems.
+The complexity of the medical text such as diverse length, mixed text types,
+and full of medical jargon, poses a great challenge for developing effective
+deep learning models. BERT has presented state-of-the-art results in many NLP
+tasks, such as text classification and question answering. However, the
+standalone BERT model cannot deal with the complexity of the medical text,
+especially the lengthy clinical notes. Herein, we develop a new model called
+KG-MTT-BERT (Knowledge Graph Enhanced Multi-Type Text BERT) by extending the
+BERT model for long and multi-type text with the integration of the medical
+knowledge graph. Our model can outperform all baselines and other
+state-of-the-art models in diagnosis-related group (DRG) classification, which
+requires comprehensive medical text for accurate classification. We also
+demonstrated that our model can effectively handle multi-type text and the
+integration of medical knowledge graph can significantly improve the
+performance.
+},
+    year = {2022},
+    month = {10},
+    url = {http://arxiv.org/pdf/2210.03970v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:SPeC:_A_Soft_Prompt-Based_Calibration_on_Performance_Variability_of
+__Large_Language_Model_in_Clinical_Notes_Summarization,
+    title = {SPeC: A Soft Prompt-Based Calibration on Performance Variability of
+  Large Language Model in Clinical Notes Summarization},
+    author = {Yu-Neng Chuang, Ruixiang Tang, Xiaoqian Jiang, Xia Hu},
+    abstract = {  Electronic health records (EHRs) store an extensive array of patient
+information, encompassing medical histories, diagnoses, treatments, and test
+outcomes. These records are crucial for enabling healthcare providers to make
+well-informed decisions regarding patient care. Summarizing clinical notes
+further assists healthcare professionals in pinpointing potential health risks
+and making better-informed decisions. This process contributes to reducing
+errors and enhancing patient outcomes by ensuring providers have access to the
+most pertinent and current patient data. Recent research has shown that
+incorporating prompts with large language models (LLMs) substantially boosts
+the efficacy of summarization tasks. However, we show that this approach also
+leads to increased output variance, resulting in notably divergent outputs even
+when prompts share similar meanings. To tackle this challenge, we introduce a
+model-agnostic Soft Prompt-Based Calibration (SPeC) pipeline that employs soft
+prompts to diminish variance while preserving the advantages of prompt-based
+summarization. Experimental findings on multiple clinical note tasks and LLMs
+indicate that our method not only bolsters performance but also effectively
+curbs variance for various LLMs, providing a more uniform and dependable
+solution for summarizing vital medical information.
+},
+    year = {2023},
+    month = {03},
+    url = {http://arxiv.org/pdf/2303.13035v3},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Towards_Reliable_Medical_Question_Answering:_Techniques_and_Challenges
+__in_Mitigating_Hallucinations_in_Language_Models,
+    title = {Towards Reliable Medical Question Answering: Techniques and Challenges
+  in Mitigating Hallucinations in Language Models},
+    author = {Duy Khoa Pham, Bao Quoc Vo},
+    abstract = {  The rapid advancement of large language models (LLMs) has significantly
+impacted various domains, including healthcare and biomedicine. However, the
+phenomenon of hallucination, where LLMs generate outputs that deviate from
+factual accuracy or context, poses a critical challenge, especially in
+high-stakes domains. This paper conducts a scoping study of existing techniques
+for mitigating hallucinations in knowledge-based task in general and especially
+for medical domains. Key methods covered in the paper include
+Retrieval-Augmented Generation (RAG)-based techniques, iterative feedback
+loops, supervised fine-tuning, and prompt engineering. These techniques, while
+promising in general contexts, require further adaptation and optimization for
+the medical domain due to its unique demands for up-to-date, specialized
+knowledge and strict adherence to medical guidelines. Addressing these
+challenges is crucial for developing trustworthy AI systems that enhance
+clinical decision-making and patient safety as well as accuracy of biomedical
+scientific research.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.13808v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:FIND:_Fine-grained_Information_Density_Guided_Adaptive
+__Retrieval-Augmented_Generation_for_Disease_Diagnosis,
+    title = {FIND: Fine-grained Information Density Guided Adaptive
+  Retrieval-Augmented Generation for Disease Diagnosis},
+    author = {Mingyi Jia, Junwen Duan, Yan Song, Jianxin Wang},
+    abstract = {  Retrieval-Augmented Large Language Models (LLMs), which integrate external
+knowledge into LLMs, have shown remarkable performance in various medical
+domains, including clinical diagnosis. However, existing RAG methods struggle
+to effectively assess task difficulty to make retrieval decisions, thereby
+failing to meet the clinical requirements for balancing efficiency and
+accuracy. So in this paper, we propose FIND (\textbf{F}ine-grained
+\textbf{In}formation \textbf{D}ensity Guided Adaptive RAG), a novel framework
+that improves the reliability of RAG in disease diagnosis scenarios. FIND
+incorporates a fine-grained adaptive control module to determine whether
+retrieval is necessary based on the information density of the input. By
+optimizing the retrieval process and implementing a knowledge filtering module,
+FIND ensures that the retrieval is better suited to clinical scenarios.
+Experiments on three Chinese electronic medical record datasets demonstrate
+that FIND significantly outperforms various baseline methods, highlighting its
+effectiveness in clinical diagnosis tasks.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.14614v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Open-Source_Retrieval_Augmented_Generation_Framework_for_Retrieving
+__Accurate_Medication_Insights_from_Formularies_for_African_Healthcare_Workers,
+    title = {Open-Source Retrieval Augmented Generation Framework for Retrieving
+  Accurate Medication Insights from Formularies for African Healthcare Workers},
+    author = {Axum AI,  :, J. Owoyemi, S. Abubakar, A. Owoyemi, T. O. Togunwa, F. C. Madubuko, S. Oyatoye, Z. Oyetolu, K. Akyea, A. O. Mohammed, A. Adebakin},
+    abstract = {  Accessing accurate medication insights is vital for enhancing patient safety,
+minimizing errors, and supporting clinical decision-making. However, healthcare
+professionals in Africa often rely on manual and time-consuming processes to
+retrieve drug information, exacerbated by limited access to pharmacists due to
+brain drain and healthcare disparities. This paper presents "Drug Insights," an
+open-source Retrieval-Augmented Generation (RAG) chatbot designed to streamline
+medication lookup for healthcare workers in Africa. By leveraging a corpus of
+Nigerian pharmaceutical data and advanced AI technologies, including Pinecone
+databases and GPT models, the system delivers accurate, context-specific
+responses with minimal hallucination. The chatbot integrates prompt engineering
+and S-BERT evaluation to optimize retrieval and response generation.
+Preliminary tests, including pharmacist feedback, affirm the tool's potential
+to improve drug information access while highlighting areas for enhancement,
+such as UI/UX refinement and extended corpus integration.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2502.15722v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Ontology-Constrained_Generation_of_Domain-Specific_Clinical_Summaries,
+    title = {Ontology-Constrained Generation of Domain-Specific Clinical Summaries},
+    author = {Gaya Mehenni, Amal Zouaq},
+    abstract = {  Large Language Models (LLMs) offer promising solutions for text
+summarization. However, some domains require specific information to be
+available in the summaries. Generating these domain-adapted summaries is still
+an open challenge. Similarly, hallucinations in generated content is a major
+drawback of current approaches, preventing their deployment. This study
+proposes a novel approach that leverages ontologies to create domain-adapted
+summaries both structured and unstructured. We employ an ontology-guided
+constrained decoding process to reduce hallucinations while improving
+relevance. When applied to the medical domain, our method shows potential in
+summarizing Electronic Health Records (EHRs) across different specialties,
+allowing doctors to focus on the most relevant information to their domain.
+Evaluation on the MIMIC-III dataset demonstrates improvements in generating
+domain-adapted summaries of clinical notes and hallucination reduction.
+},
+    year = {2024},
+    month = {11},
+    url = {http://arxiv.org/pdf/2411.15666v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:A_Large_Language_Model_Pipeline_for_Breast_Cancer_Oncology,
+    title = {A Large Language Model Pipeline for Breast Cancer Oncology},
+    author = {Tristen Pool, Dennis Trujillo},
+    abstract = {  Large language models (LLMs) have demonstrated potential in the innovation of
+many disciplines. However, how they can best be developed for oncology remains
+underdeveloped. State-of-the-art OpenAI models were fine-tuned on a clinical
+dataset and clinical guidelines text corpus for two important cancer treatment
+factors, adjuvant radiation therapy and chemotherapy, using a novel Langchain
+prompt engineering pipeline. A high accuracy (0.85+) was achieved in the
+classification of adjuvant radiation therapy and chemotherapy for breast cancer
+patients. Furthermore, a confidence interval was formed from observational data
+on the quality of treatment from human oncologists to estimate the proportion
+of scenarios in which the model must outperform the original oncologist in its
+treatment prediction to be a better solution overall as 8.2% to 13.3%. Due to
+indeterminacy in the outcomes of cancer treatment decisions, future
+investigation, potentially a clinical trial, would be required to determine if
+this threshold was met by the models. Nevertheless, with 85% of U.S. cancer
+patients receiving treatment at local community facilities, these kinds of
+models could play an important part in expanding access to quality care with
+outcomes that lie, at minimum, close to a human oncologist.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.06455v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:MedCT:_A_Clinical_Terminology_Graph_for_Generative_AI_Applications_in
+__Healthcare,
+    title = {MedCT: A Clinical Terminology Graph for Generative AI Applications in
+  Healthcare},
+    author = {Ye Chen, Dongdong Huang, Haoyun Xu, Cong Fu, Lin Sheng, Qingli Zhou, Yuqiang Shen, Kai Wang},
+    abstract = {  We introduce the world's first clinical terminology for the Chinese
+healthcare community, namely MedCT, accompanied by a clinical foundation model
+MedBERT and an entity linking model MedLink. The MedCT system enables
+standardized and programmable representation of Chinese clinical data,
+successively stimulating the development of new medicines, treatment pathways,
+and better patient outcomes for the populous Chinese community. Moreover, the
+MedCT knowledge graph provides a principled mechanism to minimize the
+hallucination problem of large language models (LLMs), therefore achieving
+significant levels of accuracy and safety in LLM-based clinical applications.
+By leveraging the LLMs' emergent capabilities of generativeness and
+expressiveness, we were able to rapidly built a production-quality terminology
+system and deployed to real-world clinical field within three months, while
+classical terminologies like SNOMED CT have gone through more than twenty years
+development. Our experiments show that the MedCT system achieves
+state-of-the-art (SOTA) performance in semantic matching and entity linking
+tasks, not only for Chinese but also for English. We also conducted a
+longitudinal field experiment by applying MedCT and LLMs in a representative
+spectrum of clinical tasks, including electronic health record (EHR)
+auto-generation and medical document search for diagnostic decision making. Our
+study shows a multitude of values of MedCT for clinical workflows and patient
+outcomes, especially in the new genre of clinical LLM applications. We present
+our approach in sufficient engineering detail, such that implementing a
+clinical terminology for other non-English societies should be readily
+reproducible. We openly release our terminology, models and algorithms, along
+with real-world clinical datasets for the development.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2501.06465v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Utilizing_ChatGPT_to_Enhance_Clinical_Trial_Enrollment,
+    title = {Utilizing ChatGPT to Enhance Clinical Trial Enrollment},
+    author = {Georgios Peikos, Symeon Symeonidis, Pranav Kasela, Gabriella Pasi},
+    abstract = {  Clinical trials are a critical component of evaluating the effectiveness of
+new medical interventions and driving advancements in medical research.
+Therefore, timely enrollment of patients is crucial to prevent delays or
+premature termination of trials. In this context, Electronic Health Records
+(EHRs) have emerged as a valuable tool for identifying and enrolling eligible
+participants. In this study, we propose an automated approach that leverages
+ChatGPT, a large language model, to extract patient-related information from
+unstructured clinical notes and generate search queries for retrieving
+potentially eligible clinical trials. Our empirical evaluation, conducted on
+two benchmark retrieval collections, shows improved retrieval performance
+compared to existing approaches when several general-purposed and task-specific
+prompts are used. Notably, ChatGPT-generated queries also outperform
+human-generated queries in terms of retrieval performance. These findings
+highlight the potential use of ChatGPT to enhance clinical trial enrollment
+while ensuring the quality of medical service and minimizing direct risks to
+patients.
+},
+    year = {2023},
+    month = {06},
+    url = {http://arxiv.org/pdf/2306.02077v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:RuCCoD:_Towards_Automated_ICD_Coding_in_Russian,
+    title = {RuCCoD: Towards Automated ICD Coding in Russian},
+    author = {Aleksandr Nesterov, Andrey Sakhovskiy, Ivan Sviridov, Airat Valiev, Vladimir Makharev, Petr Anokhin, Galina Zubkova, Elena Tutubalina},
+    abstract = {  This study investigates the feasibility of automating clinical coding in
+Russian, a language with limited biomedical resources. We present a new dataset
+for ICD coding, which includes diagnosis fields from electronic health records
+(EHRs) annotated with over 10,000 entities and more than 1,500 unique ICD
+codes. This dataset serves as a benchmark for several state-of-the-art models,
+including BERT, LLaMA with LoRA, and RAG, with additional experiments examining
+transfer learning across domains (from PubMed abstracts to medical diagnosis)
+and terminologies (from UMLS concepts to ICD codes). We then apply the
+best-performing model to label an in-house EHR dataset containing patient
+histories from 2017 to 2021. Our experiments, conducted on a carefully curated
+test set, demonstrate that training with the automated predicted codes leads to
+a significant improvement in accuracy compared to manually annotated data from
+physicians. We believe our findings offer valuable insights into the potential
+for automating clinical coding in resource-limited languages like Russian,
+which could enhance clinical efficiency and data accuracy in these contexts.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.21263v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Assessing_the_Usability_of_GutGPT:_A_Simulation_Study_of_an_AI_Clinical
+__Decision_Support_System_for_Gastrointestinal_Bleeding_Risk,
+    title = {Assessing the Usability of GutGPT: A Simulation Study of an AI Clinical
+  Decision Support System for Gastrointestinal Bleeding Risk},
+    author = {Colleen Chan, Kisung You, Sunny Chung, Mauro Giuffrè, Theo Saarinen, Niroop Rajashekar, Yuan Pu, Yeo Eun Shin, Loren Laine, Ambrose Wong, René Kizilcec, Jasjeet Sekhon, Dennis Shung},
+    abstract = {  Applications of large language models (LLMs) like ChatGPT have potential to
+enhance clinical decision support through conversational interfaces. However,
+challenges of human-algorithmic interaction and clinician trust are poorly
+understood. GutGPT, a LLM for gastrointestinal (GI) bleeding risk prediction
+and management guidance, was deployed in clinical simulation scenarios
+alongside the electronic health record (EHR) with emergency medicine
+physicians, internal medicine physicians, and medical students to evaluate its
+effect on physician acceptance and trust in AI clinical decision support
+systems (AI-CDSS). GutGPT provides risk predictions from a validated machine
+learning model and evidence-based answers by querying extracted clinical
+guidelines. Participants were randomized to GutGPT and an interactive
+dashboard, or the interactive dashboard and a search engine. Surveys and
+educational assessments taken before and after measured technology acceptance
+and content mastery. Preliminary results showed mixed effects on acceptance
+after using GutGPT compared to the dashboard or search engine but appeared to
+improve content mastery based on simulation performance. Overall, this study
+demonstrates LLMs like GutGPT could enhance effective AI-CDSS if implemented
+optimally and paired with interactive interfaces.
+},
+    year = {2023},
+    month = {12},
+    url = {http://arxiv.org/pdf/2312.10072v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Large_Language_Models_for_Medical_OSCE_Assessment:_A_Novel_Approach_to
+__Transcript_Analysis,
+    title = {Large Language Models for Medical OSCE Assessment: A Novel Approach to
+  Transcript Analysis},
+    author = {Ameer Hamza Shakur, Michael J. Holcomb, David Hein, Shinyoung Kang, Thomas O. Dalton, Krystle K. Campbell, Daniel J. Scott, Andrew R. Jamieson},
+    abstract = {  Grading Objective Structured Clinical Examinations (OSCEs) is a
+time-consuming and expensive process, traditionally requiring extensive manual
+effort from human experts. In this study, we explore the potential of Large
+Language Models (LLMs) to assess skills related to medical student
+communication. We analyzed 2,027 video-recorded OSCE examinations from the
+University of Texas Southwestern Medical Center (UTSW), spanning four years
+(2019-2022), and several different medical cases or "stations." Specifically,
+our focus was on evaluating students' ability to summarize patients' medical
+history: we targeted the rubric item 'did the student summarize the patients'
+medical history?' from the communication skills rubric. After transcribing
+speech audio captured by OSCE videos using Whisper-v3, we studied the
+performance of various LLM-based approaches for grading students on this
+summarization task based on their examination transcripts. Using various
+frontier-level open-source and proprietary LLMs, we evaluated different
+techniques such as zero-shot chain-of-thought prompting, retrieval augmented
+generation, and multi-model ensemble methods. Our results show that frontier
+LLM models like GPT-4 achieved remarkable alignment with human graders,
+demonstrating a Cohen's kappa agreement of 0.88 and indicating strong potential
+for LLM-based OSCE grading to augment the current grading process. Open-source
+models also showed promising results, suggesting potential for widespread,
+cost-effective deployment. Further, we present a failure analysis identifying
+conditions where LLM grading may be less reliable in this context and recommend
+best practices for deploying LLMs in medical education settings.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.12858v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:The_Potential_and_Pitfalls_of_using_a_Large_Language_Model_such_as
+__ChatGPT_or_GPT-4_as_a_Clinical_Assistant,
+    title = {The Potential and Pitfalls of using a Large Language Model such as
+  ChatGPT or GPT-4 as a Clinical Assistant},
+    author = {Jingqing Zhang, Kai Sun, Akshay Jagadeesh, Mahta Ghahfarokhi, Deepa Gupta, Ashok Gupta, Vibhor Gupta, Yike Guo},
+    abstract = {  Recent studies have demonstrated promising performance of ChatGPT and GPT-4
+on several medical domain tasks. However, none have assessed its performance
+using a large-scale real-world electronic health record database, nor have
+evaluated its utility in providing clinical diagnostic assistance for patients
+across a full range of disease presentation. We performed two analyses using
+ChatGPT and GPT-4, one to identify patients with specific medical diagnoses
+using a real-world large electronic health record database and the other, in
+providing diagnostic assistance to healthcare workers in the prospective
+evaluation of hypothetical patients. Our results show that GPT-4 across disease
+classification tasks with chain of thought and few-shot prompting can achieve
+performance as high as 96% F1 scores. For patient assessment, GPT-4 can
+accurately diagnose three out of four times. However, there were mentions of
+factually incorrect statements, overlooking crucial medical findings,
+recommendations for unnecessary investigations and overtreatment. These issues
+coupled with privacy concerns, make these models currently inadequate for real
+world clinical use. However, limited data and time needed for prompt
+engineering in comparison to configuration of conventional machine learning
+workflows highlight their potential for scalability across healthcare
+applications.
+},
+    year = {2023},
+    month = {07},
+    url = {http://arxiv.org/pdf/2307.08152v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:MedPromptX:_Grounded_Multimodal_Prompting_for_Chest_X-ray_Diagnosis,
+    title = {MedPromptX: Grounded Multimodal Prompting for Chest X-ray Diagnosis},
+    author = {Mai A. Shaaban, Adnan Khan, Mohammad Yaqub},
+    abstract = {  Chest X-ray images are commonly used for predicting acute and chronic
+cardiopulmonary conditions, but efforts to integrate them with structured
+clinical data face challenges due to incomplete electronic health records
+(EHR). This paper introduces MedPromptX, the first clinical decision support
+system that integrates multimodal large language models (MLLMs), few-shot
+prompting (FP) and visual grounding (VG) to combine imagery with EHR data for
+chest X-ray diagnosis. A pre-trained MLLM is utilized to complement the missing
+EHR information, providing a comprehensive understanding of patients' medical
+history. Additionally, FP reduces the necessity for extensive training of MLLMs
+while effectively tackling the issue of hallucination. Nevertheless, the
+process of determining the optimal number of few-shot examples and selecting
+high-quality candidates can be burdensome, yet it profoundly influences model
+performance. Hence, we propose a new technique that dynamically refines
+few-shot data for real-time adjustment to new patient scenarios. Moreover, VG
+narrows the search area in X-ray images, thereby enhancing the identification
+of abnormalities. We also release MedPromptX-VQA, a new in-context visual
+question answering dataset encompassing interleaved images and EHR data derived
+from MIMIC-IV and MIMIC-CXR-JPG databases. Results demonstrate the SOTA
+performance of MedPromptX, achieving an 11% improvement in F1-score compared to
+the baselines. Code and data are publicly available on
+https://github.com/BioMedIA-MBZUAI/MedPromptX.
+},
+    year = {2024},
+    month = {03},
+    url = {http://arxiv.org/pdf/2403.15585v4},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Clinical_Decision_Transformer:_Intended_Treatment_Recommendation_through
+__Goal_Prompting,
+    title = {Clinical Decision Transformer: Intended Treatment Recommendation through
+  Goal Prompting},
+    author = {Seunghyun Lee, Da Young Lee, Sujeong Im, Nan Hee Kim, Sung-Min Park},
+    abstract = {  With recent achievements in tasks requiring context awareness, foundation
+models have been adopted to treat large-scale data from electronic health
+record (EHR) systems. However, previous clinical recommender systems based on
+foundation models have a limited purpose of imitating clinicians' behavior and
+do not directly consider a problem of missing values. In this paper, we propose
+Clinical Decision Transformer (CDT), a recommender system that generates a
+sequence of medications to reach a desired range of clinical states given as
+goal prompts. For this, we conducted goal-conditioned sequencing, which
+generated a subsequence of treatment history with prepended future goal state,
+and trained the CDT to model sequential medications required to reach that goal
+state. For contextual embedding over intra-admission and inter-admissions, we
+adopted a GPT-based architecture with an admission-wise attention mask and
+column embedding. In an experiment, we extracted a diabetes dataset from an EHR
+system, which contained treatment histories of 4788 patients. We observed that
+the CDT achieved the intended treatment effect according to goal prompt ranges
+(e.g., NormalA1c, LowerA1c, and HigherA1c), contrary to the case with behavior
+cloning. To the best of our knowledge, this is the first study to explore
+clinical recommendations from the perspective of goal prompting. See
+https://clinical-decision-transformer.github.io for code and additional
+information.
+},
+    year = {2023},
+    month = {02},
+    url = {http://arxiv.org/pdf/2302.00612v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Evaluation_of_General_Large_Language_Models_in_Contextually_Assessing
+__Semantic_Concepts_Extracted_from_Adult_Critical_Care_Electronic_Health_Record
+__Notes,
+    title = {Evaluation of General Large Language Models in Contextually Assessing
+  Semantic Concepts Extracted from Adult Critical Care Electronic Health Record
+  Notes},
+    author = {Darren Liu, Cheng Ding, Delgersuren Bold, Monique Bouvier, Jiaying Lu, Benjamin Shickel, Craig S. Jabaley, Wenhui Zhang, Soojin Park, Michael J. Young, Mark S. Wainwright, Gilles Clermont, Parisa Rashidi, Eric S. Rosenthal, Laurie Dimisko, Ran Xiao, Joo Heung Yoon, Carl Yang, Xiao Hu},
+    abstract = {  The field of healthcare has increasingly turned its focus towards Large
+Language Models (LLMs) due to their remarkable performance. However, their
+performance in actual clinical applications has been underexplored. Traditional
+evaluations based on question-answering tasks don't fully capture the nuanced
+contexts. This gap highlights the need for more in-depth and practical
+assessments of LLMs in real-world healthcare settings. Objective: We sought to
+evaluate the performance of LLMs in the complex clinical context of adult
+critical care medicine using systematic and comprehensible analytic methods,
+including clinician annotation and adjudication. Methods: We investigated the
+performance of three general LLMs in understanding and processing real-world
+clinical notes. Concepts from 150 clinical notes were identified by MetaMap and
+then labeled by 9 clinicians. Each LLM's proficiency was evaluated by
+identifying the temporality and negation of these concepts using different
+prompts for an in-depth analysis. Results: GPT-4 showed overall superior
+performance compared to other LLMs. In contrast, both GPT-3.5 and
+text-davinci-003 exhibit enhanced performance when the appropriate prompting
+strategies are employed. The GPT family models have demonstrated considerable
+efficiency, evidenced by their cost-effectiveness and time-saving capabilities.
+Conclusion: A comprehensive qualitative performance evaluation framework for
+LLMs is developed and operationalized. This framework goes beyond singular
+performance aspects. With expert annotations, this methodology not only
+validates LLMs' capabilities in processing complex medical data but also
+establishes a benchmark for future LLM evaluations across specialized domains.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2401.13588v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Language_Models_and_Retrieval_Augmented_Generation_for_Automated
+__Structured_Data_Extraction_from_Diagnostic_Reports,
+    title = {Language Models and Retrieval Augmented Generation for Automated
+  Structured Data Extraction from Diagnostic Reports},
+    author = {Mohamed Sobhi Jabal, Pranav Warman, Jikai Zhang, Kartikeye Gupta, Ayush Jain, Maciej Mazurowski, Walter Wiggins, Kirti Magudia, Evan Calabrese},
+    abstract = {  Purpose: To develop and evaluate an automated system for extracting
+structured clinical information from unstructured radiology and pathology
+reports using open-weights large language models (LMs) and retrieval augmented
+generation (RAG), and to assess the effects of model configuration variables on
+extraction performance. Methods and Materials: The study utilized two datasets:
+7,294 radiology reports annotated for Brain Tumor Reporting and Data System
+(BT-RADS) scores and 2,154 pathology reports annotated for isocitrate
+dehydrogenase (IDH) mutation status. An automated pipeline was developed to
+benchmark the performance of various LMs and RAG configurations. The impact of
+model size, quantization, prompting strategies, output formatting, and
+inference parameters was systematically evaluated. Results: The best performing
+models achieved over 98% accuracy in extracting BT-RADS scores from radiology
+reports and over 90% for IDH mutation status extraction from pathology reports.
+The top model being medical fine-tuned llama3. Larger, newer, and domain
+fine-tuned models consistently outperformed older and smaller models. Model
+quantization had minimal impact on performance. Few-shot prompting
+significantly improved accuracy. RAG improved performance for complex pathology
+reports but not for shorter radiology reports. Conclusions: Open LMs
+demonstrate significant potential for automated extraction of structured
+clinical data from unstructured clinical reports with local privacy-preserving
+application. Careful model selection, prompt engineering, and semi-automated
+optimization using annotated data are critical for optimal performance. These
+approaches could be reliable enough for practical use in research workflows,
+highlighting the potential for human-machine collaboration in healthcare data
+extraction.
+},
+    year = {2024},
+    month = {09},
+    url = {http://arxiv.org/pdf/2409.10576v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:RAMIE:_Retrieval-Augmented_Multi-task_Information_Extraction_with_Large
+__Language_Models_on_Dietary_Supplements,
+    title = {RAMIE: Retrieval-Augmented Multi-task Information Extraction with Large
+  Language Models on Dietary Supplements},
+    author = {Zaifu Zhan, Shuang Zhou, Mingchen Li, Rui Zhang},
+    abstract = {  \textbf{Objective:} We aimed to develop an advanced multi-task large language
+model (LLM) framework to extract multiple types of information about dietary
+supplements (DS) from clinical records.
+  \textbf{Methods:} We used four core DS information extraction tasks - namely,
+named entity recognition (NER: 2,949 clinical sentences), relation extraction
+(RE: 4,892 sentences), triple extraction (TE: 2,949 sentences), and usage
+classification (UC: 2,460 sentences) as our multitasks. We introduced a novel
+Retrieval-Augmented Multi-task Information Extraction (RAMIE) Framework,
+including: 1) employed instruction fine-tuning techniques with task-specific
+prompts, 2) trained LLMs for multiple tasks with improved storage efficiency
+and lower training costs, and 3) incorporated retrieval augmentation generation
+(RAG) techniques by retrieving similar examples from the training set. We
+compared RAMIE's performance to LLMs with instruction fine-tuning alone and
+conducted an ablation study to assess the contributions of multi-task learning
+and RAG to improved multitasking performance.
+  \textbf{Results:} With the aid of the RAMIE framework, Llama2-13B achieved an
+F1 score of 87.39 (3.51\% improvement) on the NER task and demonstrated
+outstanding performance on the RE task with an F1 score of 93.74 (1.15\%
+improvement). For the TE task, Llama2-7B scored 79.45 (14.26\% improvement),
+and MedAlpaca-7B achieved the highest F1 score of 93.45 (0.94\% improvement) on
+the UC task. The ablation study revealed that while MTL increased efficiency
+with a slight trade-off in performance, RAG significantly boosted overall
+accuracy.
+  \textbf{Conclusion:} This study presents a novel RAMIE framework that
+demonstrates substantial improvements in multi-task information extraction for
+DS-related data from clinical records. Our framework can potentially be applied
+to other domains.
+},
+    year = {2024},
+    month = {11},
+    url = {http://arxiv.org/pdf/2411.15700v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:An_Empirical_Evaluation_of_Prompting_Strategies_for_Large_Language
+__Models_in_Zero-Shot_Clinical_Natural_Language_Processing,
+    title = {An Empirical Evaluation of Prompting Strategies for Large Language
+  Models in Zero-Shot Clinical Natural Language Processing},
+    author = {Sonish Sivarajkumar, Mark Kelley, Alyssa Samolyk-Mazzanti, Shyam Visweswaran, Yanshan Wang},
+    abstract = {  Large language models (LLMs) have shown remarkable capabilities in Natural
+Language Processing (NLP), especially in domains where labeled data is scarce
+or expensive, such as clinical domain. However, to unlock the clinical
+knowledge hidden in these LLMs, we need to design effective prompts that can
+guide them to perform specific clinical NLP tasks without any task-specific
+training data. This is known as in-context learning, which is an art and
+science that requires understanding the strengths and weaknesses of different
+LLMs and prompt engineering approaches. In this paper, we present a
+comprehensive and systematic experimental study on prompt engineering for five
+clinical NLP tasks: Clinical Sense Disambiguation, Biomedical Evidence
+Extraction, Coreference Resolution, Medication Status Extraction, and
+Medication Attribute Extraction. We assessed the prompts proposed in recent
+literature, including simple prefix, simple cloze, chain of thought, and
+anticipatory prompts, and introduced two new types of prompts, namely heuristic
+prompting and ensemble prompting. We evaluated the performance of these prompts
+on three state-of-the-art LLMs: GPT-3.5, BARD, and LLAMA2. We also contrasted
+zero-shot prompting with few-shot prompting, and provide novel insights and
+guidelines for prompt engineering for LLMs in clinical NLP. To the best of our
+knowledge, this is one of the first works on the empirical evaluation of
+different prompt engineering approaches for clinical NLP in this era of
+generative AI, and we hope that it will inspire and inform future research in
+this area.
+},
+    year = {2023},
+    month = {09},
+    url = {http://arxiv.org/pdf/2309.08008v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Multi-OphthaLingua:_A_Multilingual_Benchmark_for_Assessing_and_Debiasing
+__LLM_Ophthalmological_QA_in_LMICs,
+    title = {Multi-OphthaLingua: A Multilingual Benchmark for Assessing and Debiasing
+  LLM Ophthalmological QA in LMICs},
+    author = {David Restrepo, Chenwei Wu, Zhengxu Tang, Zitao Shuai, Thao Nguyen Minh Phan, Jun-En Ding, Cong-Tinh Dao, Jack Gallifant, Robyn Gayle Dychiao, Jose Carlo Artiaga, André Hiroshi Bando, Carolina Pelegrini Barbosa Gracitelli, Vincenz Ferrer, Leo Anthony Celi, Danielle Bitterman, Michael G Morley, Luis Filipe Nakayama},
+    abstract = {  Current ophthalmology clinical workflows are plagued by over-referrals, long
+waits, and complex and heterogeneous medical records. Large language models
+(LLMs) present a promising solution to automate various procedures such as
+triaging, preliminary tests like visual acuity assessment, and report
+summaries. However, LLMs have demonstrated significantly varied performance
+across different languages in natural language question-answering tasks,
+potentially exacerbating healthcare disparities in Low and Middle-Income
+Countries (LMICs). This study introduces the first multilingual
+ophthalmological question-answering benchmark with manually curated questions
+parallel across languages, allowing for direct cross-lingual comparisons. Our
+evaluation of 6 popular LLMs across 7 different languages reveals substantial
+bias across different languages, highlighting risks for clinical deployment of
+LLMs in LMICs. Existing debiasing methods such as Translation Chain-of-Thought
+or Retrieval-augmented generation (RAG) by themselves fall short of closing
+this performance gap, often failing to improve performance across all languages
+and lacking specificity for the medical domain. To address this issue, We
+propose CLARA (Cross-Lingual Reflective Agentic system), a novel inference time
+de-biasing method leveraging retrieval augmented generation and
+self-verification. Our approach not only improves performance across all
+languages but also significantly reduces the multilingual bias gap,
+facilitating equitable LLM application across the globe.
+},
+    year = {2024},
+    month = {12},
+    url = {http://arxiv.org/pdf/2412.14304v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Reasoning-Enhanced_Healthcare_Predictions_with_Knowledge_Graph_Community
+__Retrieval,
+    title = {Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community
+  Retrieval},
+    author = {Pengcheng Jiang, Cao Xiao, Minhao Jiang, Parminder Bhatia, Taha Kass-Hout, Jimeng Sun, Jiawei Han},
+    abstract = {  Large language models (LLMs) have demonstrated significant potential in
+clinical decision support. Yet LLMs still suffer from hallucinations and lack
+fine-grained contextual medical knowledge, limiting their high-stake healthcare
+applications such as clinical diagnosis. Traditional retrieval-augmented
+generation (RAG) methods attempt to address these limitations but frequently
+retrieve sparse or irrelevant information, undermining prediction accuracy. We
+introduce KARE, a novel framework that integrates knowledge graph (KG)
+community-level retrieval with LLM reasoning to enhance healthcare predictions.
+KARE constructs a comprehensive multi-source KG by integrating biomedical
+databases, clinical literature, and LLM-generated insights, and organizes it
+using hierarchical graph community detection and summarization for precise and
+contextually relevant information retrieval. Our key innovations include: (1) a
+dense medical knowledge structuring approach enabling accurate retrieval of
+relevant information; (2) a dynamic knowledge retrieval mechanism that enriches
+patient contexts with focused, multi-faceted medical insights; and (3) a
+reasoning-enhanced prediction framework that leverages these enriched contexts
+to produce both accurate and interpretable clinical predictions. Extensive
+experiments demonstrate that KARE outperforms leading models by up to
+10.8-15.0% on MIMIC-III and 12.6-12.7% on MIMIC-IV for mortality and
+readmission predictions. In addition to its impressive prediction accuracy, our
+framework leverages the reasoning capabilities of LLMs, enhancing the
+trustworthiness of clinical predictions.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.04585v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Iterative_Prompt_Refinement_for_Radiation_Oncology_Symptom_Extraction
+__Using_Teacher-Student_Large_Language_Models,
+    title = {Iterative Prompt Refinement for Radiation Oncology Symptom Extraction
+  Using Teacher-Student Large Language Models},
+    author = {Reza Khanmohammadi, Ahmed I Ghanem, Kyle Verdecchia, Ryan Hall, Mohamed Elshaikh, Benjamin Movsas, Hassan Bagher-Ebadian, Indrin Chetty, Mohammad M. Ghassemi, Kundan Thind},
+    abstract = {  This study introduces a novel teacher-student architecture utilizing Large
+Language Models (LLMs) to improve prostate cancer radiotherapy symptom
+extraction from clinical notes. Mixtral, the student model, initially extracts
+symptoms, followed by GPT-4, the teacher model, which refines prompts based on
+Mixtral's performance. This iterative process involved 294 single symptom
+clinical notes across 12 symptoms, with up to 16 rounds of refinement per
+epoch. Results showed significant improvements in extracting symptoms from both
+single and multi-symptom notes. For 59 single symptom notes, accuracy increased
+from 0.51 to 0.71, precision from 0.52 to 0.82, recall from 0.52 to 0.72, and
+F1 score from 0.49 to 0.73. In 375 multi-symptom notes, accuracy rose from 0.24
+to 0.43, precision from 0.6 to 0.76, recall from 0.24 to 0.43, and F1 score
+from 0.20 to 0.44. These results demonstrate the effectiveness of advanced
+prompt engineering in LLMs for radiation oncology use.
+},
+    year = {2024},
+    month = {02},
+    url = {http://arxiv.org/pdf/2402.04075v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Leveraging_large_language_models_for_structured_information_extraction
+__from_pathology_reports,
+    title = {Leveraging large language models for structured information extraction
+  from pathology reports},
+    author = {Jeya Balaji Balasubramanian, Daniel Adams, Ioannis Roxanis, Amy Berrington de Gonzalez, Penny Coulson, Jonas S. Almeida, Montserrat García-Closas},
+    abstract = {  Background: Structured information extraction from unstructured
+histopathology reports facilitates data accessibility for clinical research.
+Manual extraction by experts is time-consuming and expensive, limiting
+scalability. Large language models (LLMs) offer efficient automated extraction
+through zero-shot prompting, requiring only natural language instructions
+without labeled data or training. We evaluate LLMs' accuracy in extracting
+structured information from breast cancer histopathology reports, compared to
+manual extraction by a trained human annotator.
+  Methods: We developed the Medical Report Information Extractor, a web
+application leveraging LLMs for automated extraction. We developed a gold
+standard extraction dataset to evaluate the human annotator alongside five LLMs
+including GPT-4o, a leading proprietary model, and the Llama 3 model family,
+which allows self-hosting for data privacy. Our assessment involved 111
+histopathology reports from the Breast Cancer Now (BCN) Generations Study,
+extracting 51 pathology features specified in the study's data dictionary.
+  Results: Evaluation against the gold standard dataset showed that both Llama
+3.1 405B (94.7% accuracy) and GPT-4o (96.1%) achieved extraction accuracy
+comparable to the human annotator (95.4%; p = 0.146 and p = 0.106,
+respectively). While Llama 3.1 70B (91.6%) performed below human accuracy (p
+<0.001), its reduced computational requirements make it a viable option for
+self-hosting.
+  Conclusion: We developed an open-source tool for structured information
+extraction that can be customized by non-programmers using natural language.
+Its modular design enables reuse for various extraction tasks, producing
+standardized, structured data from unstructured text reports to facilitate
+analytics through improved accessibility and interoperability.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.12183v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Prompt_engineering_paradigms_for_medical_applications:_scoping_review
+__and_recommendations_for_better_practices,
+    title = {Prompt engineering paradigms for medical applications: scoping review
+  and recommendations for better practices},
+    author = {Jamil Zaghir, Marco Naguib, Mina Bjelogrlic, Aurélie Névéol, Xavier Tannier, Christian Lovis},
+    abstract = {  Prompt engineering is crucial for harnessing the potential of large language
+models (LLMs), especially in the medical domain where specialized terminology
+and phrasing is used. However, the efficacy of prompt engineering in the
+medical domain remains to be explored. In this work, 114 recent studies
+(2022-2024) applying prompt engineering in medicine, covering prompt learning
+(PL), prompt tuning (PT), and prompt design (PD) are reviewed. PD is the most
+prevalent (78 articles). In 12 papers, PD, PL, and PT terms were used
+interchangeably. ChatGPT is the most commonly used LLM, with seven papers using
+it for processing sensitive clinical data. Chain-of-Thought emerges as the most
+common prompt engineering technique. While PL and PT articles typically provide
+a baseline for evaluating prompt-based approaches, 64% of PD studies lack
+non-prompt-related baselines. We provide tables and figures summarizing
+existing work, and reporting recommendations to guide future research
+contributions.
+},
+    year = {2024},
+    month = {05},
+    url = {http://arxiv.org/pdf/2405.01249v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Superhuman_performance_in_urology_board_questions_by_an_explainable
+__large_language_model_enabled_for_context_integration_of_the_European
+__Association_of_Urology_guidelines:_the_UroBot_study,
+    title = {Superhuman performance in urology board questions by an explainable
+  large language model enabled for context integration of the European
+  Association of Urology guidelines: the UroBot study},
+    author = {Martin J. Hetz, Nicolas Carl, Sarah Haggenmüller, Christoph Wies, Maurice Stephan Michel, Frederik Wessels, Titus J. Brinker},
+    abstract = {  Large Language Models (LLMs) are revolutionizing medical Question-Answering
+(medQA) through extensive use of medical literature. However, their performance
+is often hampered by outdated training data and a lack of explainability, which
+limits clinical applicability. This study aimed to create and assess UroBot, a
+urology-specialized chatbot, by comparing it with state-of-the-art models and
+the performance of urologists on urological board questions, ensuring full
+clinician-verifiability. UroBot was developed using OpenAI's GPT-3.5, GPT-4,
+and GPT-4o models, employing retrieval-augmented generation (RAG) and the
+latest 2023 guidelines from the European Association of Urology (EAU). The
+evaluation included ten runs of 200 European Board of Urology (EBU) In-Service
+Assessment (ISA) questions, with performance assessed by the mean Rate of
+Correct Answers (RoCA). UroBot-4o achieved an average RoCA of 88.4%, surpassing
+GPT-4o by 10.8%, with a score of 77.6%. It was also clinician-verifiable and
+exhibited the highest run agreement as indicated by Fleiss' Kappa (k = 0.979).
+By comparison, the average performance of urologists on board questions, as
+reported in the literature, is 68.7%. UroBot's clinician-verifiable nature and
+superior accuracy compared to both existing models and urologists on board
+questions highlight its potential for clinical integration. The study also
+provides the necessary code and instructions for further development of UroBot.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.01428v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:SearchRAG:_Can_Search_Engines_Be_Helpful_for_LLM-based_Medical_Question
+__Answering?,
+    title = {SearchRAG: Can Search Engines Be Helpful for LLM-based Medical Question
+  Answering?},
+    author = {Yucheng Shi, Tianze Yang, Canyu Chen, Quanzheng Li, Tianming Liu, Xiang Li, Ninghao Liu},
+    abstract = {  Large Language Models (LLMs) have shown remarkable capabilities in general
+domains but often struggle with tasks requiring specialized knowledge.
+Conventional Retrieval-Augmented Generation (RAG) techniques typically retrieve
+external information from static knowledge bases, which can be outdated or
+incomplete, missing fine-grained clinical details essential for accurate
+medical question answering. In this work, we propose SearchRAG, a novel
+framework that overcomes these limitations by leveraging real-time search
+engines. Our method employs synthetic query generation to convert complex
+medical questions into search-engine-friendly queries and utilizes
+uncertainty-based knowledge selection to filter and incorporate the most
+relevant and informative medical knowledge into the LLM's input. Experimental
+results demonstrate that our method significantly improves response accuracy in
+medical question answering tasks, particularly for complex questions requiring
+detailed and up-to-date knowledge.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.13233v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Evaluating_Large_Language_Models_on_a_Highly-specialized_Topic,
+__Radiation_Oncology_Physics,
+    title = {Evaluating Large Language Models on a Highly-specialized Topic,
+  Radiation Oncology Physics},
+    author = {Jason Holmes, Zhengliang Liu, Lian Zhang, Yuzhen Ding, Terence T. Sio, Lisa A. McGee, Jonathan B. Ashman, Xiang Li, Tianming Liu, Jiajian Shen, Wei Liu},
+    abstract = {  We present the first study to investigate Large Language Models (LLMs) in
+answering radiation oncology physics questions. Because popular exams like AP
+Physics, LSAT, and GRE have large test-taker populations and ample test
+preparation resources in circulation, they may not allow for accurately
+assessing the true potential of LLMs. This paper proposes evaluating LLMs on a
+highly-specialized topic, radiation oncology physics, which may be more
+pertinent to scientific and medical communities in addition to being a valuable
+benchmark of LLMs. We developed an exam consisting of 100 radiation oncology
+physics questions based on our expertise at Mayo Clinic. Four LLMs, ChatGPT
+(GPT-3.5), ChatGPT (GPT-4), Bard (LaMDA), and BLOOMZ, were evaluated against
+medical physicists and non-experts. ChatGPT (GPT-4) outperformed all other LLMs
+as well as medical physicists, on average. The performance of ChatGPT (GPT-4)
+was further improved when prompted to explain first, then answer. ChatGPT
+(GPT-3.5 and GPT-4) showed a high level of consistency in its answer choices
+across a number of trials, whether correct or incorrect, a characteristic that
+was not observed in the human test groups. In evaluating ChatGPTs (GPT-4)
+deductive reasoning ability using a novel approach (substituting the correct
+answer with "None of the above choices is the correct answer."), ChatGPT
+(GPT-4) demonstrated surprising accuracy, suggesting the potential presence of
+an emergent ability. Finally, although ChatGPT (GPT-4) performed well overall,
+its intrinsic properties did not allow for further improvement when scoring
+based on a majority vote across trials. In contrast, a team of medical
+physicists were able to greatly outperform ChatGPT (GPT-4) using a majority
+vote. This study suggests a great potential for LLMs to work alongside
+radiation oncology experts as highly knowledgeable assistants.
+},
+    year = {2023},
+    month = {04},
+    url = {http://arxiv.org/pdf/2304.01938v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:CohortGPT:_An_Enhanced_GPT_for_Participant_Recruitment_in_Clinical_Study,
+    title = {CohortGPT: An Enhanced GPT for Participant Recruitment in Clinical Study},
+    author = {Zihan Guan, Zihao Wu, Zhengliang Liu, Dufan Wu, Hui Ren, Quanzheng Li, Xiang Li, Ninghao Liu},
+    abstract = {  Participant recruitment based on unstructured medical texts such as clinical
+notes and radiology reports has been a challenging yet important task for the
+cohort establishment in clinical research. Recently, Large Language Models
+(LLMs) such as ChatGPT have achieved tremendous success in various downstream
+tasks thanks to their promising performance in language understanding,
+inference, and generation. It is then natural to test their feasibility in
+solving the cohort recruitment task, which involves the classification of a
+given paragraph of medical text into disease label(s). However, when applied to
+knowledge-intensive problem settings such as medical text classification, where
+the LLMs are expected to understand the decision made by human experts and
+accurately identify the implied disease labels, the LLMs show a mediocre
+performance. A possible explanation is that, by only using the medical text,
+the LLMs neglect to use the rich context of additional information that
+languages afford. To this end, we propose to use a knowledge graph as auxiliary
+information to guide the LLMs in making predictions. Moreover, to further boost
+the LLMs adapt to the problem setting, we apply a chain-of-thought (CoT) sample
+selection strategy enhanced by reinforcement learning, which selects a set of
+CoT samples given each individual medical report. Experimental results and
+various ablation studies show that our few-shot learning method achieves
+satisfactory performance compared with fine-tuning strategies and gains superb
+advantages when the available data is limited. The code and sample dataset of
+the proposed CohortGPT model is available at:
+https://anonymous.4open.science/r/CohortGPT-4872/
+},
+    year = {2023},
+    month = {07},
+    url = {http://arxiv.org/pdf/2307.11346v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:The_Power_of_Combining_Data_and_Knowledge:_GPT-4o_is_an_Effective
+__Interpreter_of_Machine_Learning_Models_in_Predicting_Lymph_Node_Metastasis_of
+__Lung_Cancer,
+    title = {The Power of Combining Data and Knowledge: GPT-4o is an Effective
+  Interpreter of Machine Learning Models in Predicting Lymph Node Metastasis of
+  Lung Cancer},
+    author = {Danqing Hu, Bing Liu, Xiaofeng Zhu, Nan Wu},
+    abstract = {  Lymph node metastasis (LNM) is a crucial factor in determining the initial
+treatment for patients with lung cancer, yet accurate preoperative diagnosis of
+LNM remains challenging. Recently, large language models (LLMs) have garnered
+significant attention due to their remarkable text generation capabilities.
+Leveraging the extensive medical knowledge learned from vast corpora, LLMs can
+estimate probabilities for clinical problems, though their performance has
+historically been inferior to data-driven machine learning models. In this
+paper, we propose a novel ensemble method that combines the medical knowledge
+acquired by LLMs with the latent patterns identified by machine learning models
+to enhance LNM prediction performance. Initially, we developed machine learning
+models using patient data. We then designed a prompt template to integrate the
+patient data with the predicted probability from the machine learning model.
+Subsequently, we instructed GPT-4o, the most advanced LLM developed by OpenAI,
+to estimate the likelihood of LNM based on patient data and then adjust the
+estimate using the machine learning output. Finally, we collected three outputs
+from the GPT-4o using the same prompt and ensembled these results as the final
+prediction. Using the proposed method, our models achieved an AUC value of
+0.778 and an AP value of 0.426 for LNM prediction, significantly improving
+predictive performance compared to baseline machine learning models. The
+experimental results indicate that GPT-4o can effectively leverage its medical
+knowledge and the probabilities predicted by machine learning models to achieve
+more accurate LNM predictions. These findings demonstrate that LLMs can perform
+well in clinical risk prediction tasks, offering a new paradigm for integrating
+medical knowledge and patient data in clinical predictions.
+},
+    year = {2024},
+    month = {07},
+    url = {http://arxiv.org/pdf/2407.17900v5},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:LLMs_in_Biomedicine:_A_study_on_clinical_Named_Entity_Recognition,
+    title = {LLMs in Biomedicine: A study on clinical Named Entity Recognition},
+    author = {Masoud Monajatipoor, Jiaxin Yang, Joel Stremmel, Melika Emami, Fazlolah Mohaghegh, Mozhdeh Rouhsedaghat, Kai-Wei Chang},
+    abstract = {  Large Language Models (LLMs) demonstrate remarkable versatility in various
+NLP tasks but encounter distinct challenges in biomedical due to the
+complexities of language and data scarcity. This paper investigates LLMs
+application in the biomedical domain by exploring strategies to enhance their
+performance for the NER task. Our study reveals the importance of meticulously
+designed prompts in the biomedical. Strategic selection of in-context examples
+yields a marked improvement, offering ~15-20\% increase in F1 score across all
+benchmark datasets for biomedical few-shot NER. Additionally, our results
+indicate that integrating external biomedical knowledge via prompting
+strategies can enhance the proficiency of general-purpose LLMs to meet the
+specialized needs of biomedical NER. Leveraging a medical knowledge base, our
+proposed method, DiRAG, inspired by Retrieval-Augmented Generation (RAG), can
+boost the zero-shot F1 score of LLMs for biomedical NER. Code is released at
+\url{https://github.com/masoud-monajati/LLM_Bio_NER}
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.07376v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:SM70:_A_Large_Language_Model_for_Medical_Devices,
+    title = {SM70: A Large Language Model for Medical Devices},
+    author = {Anubhav Bhatti, Surajsinh Parmar, San Lee},
+    abstract = {  We are introducing SM70, a 70 billion-parameter Large Language Model that is
+specifically designed for SpassMed's medical devices under the brand name
+'JEE1' (pronounced as G1 and means 'Life'). This large language model provides
+more accurate and safe responses to medical-domain questions. To fine-tune
+SM70, we used around 800K data entries from the publicly available dataset
+MedAlpaca. The Llama2 70B open-sourced model served as the foundation for SM70,
+and we employed the QLoRA technique for fine-tuning. The evaluation is
+conducted across three benchmark datasets - MEDQA - USMLE, PUBMEDQA, and USMLE
+- each representing a unique aspect of medical knowledge and reasoning. The
+performance of SM70 is contrasted with other notable LLMs, including Llama2
+70B, Clinical Camel 70 (CC70), GPT 3.5, GPT 4, and Med-Palm, to provide a
+comparative understanding of its capabilities within the medical domain. Our
+results indicate that SM70 outperforms several established models in these
+datasets, showcasing its proficiency in handling a range of medical queries,
+from fact-based questions derived from PubMed abstracts to complex clinical
+decision-making scenarios. The robust performance of SM70, particularly in the
+USMLE and PUBMEDQA datasets, suggests its potential as an effective tool in
+clinical decision support and medical information retrieval. Despite its
+promising results, the paper also acknowledges the areas where SM70 lags behind
+the most advanced model, GPT 4, thereby highlighting the need for further
+development, especially in tasks demanding extensive medical knowledge and
+intricate reasoning.
+},
+    year = {2023},
+    month = {12},
+    url = {http://arxiv.org/pdf/2312.06974v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Benchmarking_Generative_AI_for_Scoring_Medical_Student_Interviews_in
+__Objective_Structured_Clinical_Examinations_(OSCEs),
+    title = {Benchmarking Generative AI for Scoring Medical Student Interviews in
+  Objective Structured Clinical Examinations (OSCEs)},
+    author = {Jadon Geathers, Yann Hicke, Colleen Chan, Niroop Rajashekar, Justin Sewell, Susannah Cornes, Rene Kizilcec, Dennis Shung},
+    abstract = {  Introduction. Objective Structured Clinical Examinations (OSCEs) are widely
+used to assess medical students' communication skills, but scoring
+interview-based assessments is time-consuming and potentially subject to human
+bias. This study explored the potential of large language models (LLMs) to
+automate OSCE evaluations using the Master Interview Rating Scale (MIRS).
+  Methods. We compared the performance of four state-of-the-art LLMs (GPT-4o,
+Claude 3.5, Llama 3.1, and Gemini 1.5 Pro) in evaluating OSCE transcripts
+across all 28 items of the MIRS under the conditions of zero-shot,
+chain-of-thought (CoT), few-shot, and multi-step prompting. The models were
+benchmarked against a dataset of 10 OSCE cases with 174 expert consensus scores
+available. Model performance was measured using three accuracy metrics (exact,
+off-by-one, thresholded).
+  Results. Averaging across all MIRS items and OSCE cases, LLMs performed with
+low exact accuracy (0.27 to 0.44), and moderate to high off-by-one accuracy
+(0.67 to 0.87) and thresholded accuracy (0.75 to 0.88). A zero temperature
+parameter ensured high intra-rater reliability ($\alpha = 0.98$ for GPT-4o).
+CoT, few-shot, and multi-step techniques proved valuable when tailored to
+specific assessment items. The performance was consistent across MIRS items
+independent of encounter phases and communication domains.
+  Conclusion. We demonstrated the feasibility of AI-assisted OSCE evaluation
+and provided benchmarking of multiple LLMs across multiple prompt techniques.
+Our work provides a baseline performance assessment for LLMs that lays a
+foundation for future research in automated assessment of clinical
+communication skills.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2501.13957v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Evaluating_and_Enhancing_Large_Language_Models_Performance_in
+__Domain-specific_Medicine:_Osteoarthritis_Management_with_DocOA,
+    title = {Evaluating and Enhancing Large Language Models Performance in
+  Domain-specific Medicine: Osteoarthritis Management with DocOA},
+    author = {Xi Chen, MingKe You, Li Wang, WeiZhi Liu, Yu Fu, Jie Xu, Shaoting Zhang, Gang Chen, Kang Li, Jian Li},
+    abstract = {  The efficacy of large language models (LLMs) in domain-specific medicine,
+particularly for managing complex diseases such as osteoarthritis (OA), remains
+largely unexplored. This study focused on evaluating and enhancing the clinical
+capabilities of LLMs in specific domains, using osteoarthritis (OA) management
+as a case study. A domain specific benchmark framework was developed, which
+evaluate LLMs across a spectrum from domain-specific knowledge to clinical
+applications in real-world clinical scenarios. DocOA, a specialized LLM
+tailored for OA management that integrates retrieval-augmented generation (RAG)
+and instruction prompts, was developed. The study compared the performance of
+GPT-3.5, GPT-4, and a specialized assistant, DocOA, using objective and human
+evaluations. Results showed that general LLMs like GPT-3.5 and GPT-4 were less
+effective in the specialized domain of OA management, particularly in providing
+personalized treatment recommendations. However, DocOA showed significant
+improvements. This study introduces a novel benchmark framework which assesses
+the domain-specific abilities of LLMs in multiple aspects, highlights the
+limitations of generalized LLMs in clinical contexts, and demonstrates the
+potential of tailored approaches for developing domain-specific medical LLMs.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2401.12998v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Fine-Tuning_a_Local_LLaMA-3_Large_Language_Model_for_Automated
+__Privacy-Preserving_Physician_Letter_Generation_in_Radiation_Oncology,
+    title = {Fine-Tuning a Local LLaMA-3 Large Language Model for Automated
+  Privacy-Preserving Physician Letter Generation in Radiation Oncology},
+    author = {Yihao Hou, Christoph Bert, Ahmed Gomaa, Godehard Lahmer, Daniel Hoefler, Thomas Weissmann, Raphaela Voigt, Philipp Schubert, Charlotte Schmitter, Alina Depardon, Sabine Semrau, Andreas Maier, Rainer Fietkau, Yixing Huang, Florian Putz},
+    abstract = {  Generating physician letters is a time-consuming task in daily clinical
+practice. This study investigates local fine-tuning of large language models
+(LLMs), specifically LLaMA models, for physician letter generation in a
+privacy-preserving manner within the field of radiation oncology. Our findings
+demonstrate that base LLaMA models, without fine-tuning, are inadequate for
+effectively generating physician letters. The QLoRA algorithm provides an
+efficient method for local intra-institutional fine-tuning of LLMs with limited
+computational resources (i.e., a single 48 GB GPU workstation within the
+hospital). The fine-tuned LLM successfully learns radiation oncology-specific
+information and generates physician letters in an institution-specific style.
+ROUGE scores of the generated summary reports highlight the superiority of the
+8B LLaMA-3 model over the 13B LLaMA-2 model. Further multidimensional physician
+evaluations of 10 cases reveal that, although the fine-tuned LLaMA-3 model has
+limited capacity to generate content beyond the provided input data, it
+successfully generates salutations, diagnoses and treatment histories,
+recommendations for further treatment, and planned schedules. Overall, clinical
+benefit was rated highly by the clinical experts (average score of 3.44 on a
+4-point scale). With careful physician review and correction, automated
+LLM-based physician letter generation has significant practical value.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.10715v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:DKEC:_Domain_Knowledge_Enhanced_Multi-Label_Classification_for_Diagnosis
+__Prediction,
+    title = {DKEC: Domain Knowledge Enhanced Multi-Label Classification for Diagnosis
+  Prediction},
+    author = {Xueren Ge, Satpathy Abhishek, Ronald Dean Williams, John A. Stankovic, Homa Alemzadeh},
+    abstract = {  Multi-label text classification (MLTC) tasks in the medical domain often face
+the long-tail label distribution problem. Prior works have explored
+hierarchical label structures to find relevant information for few-shot
+classes, but mostly neglected to incorporate external knowledge from medical
+guidelines. This paper presents DKEC, Domain Knowledge Enhanced Classification
+for diagnosis prediction with two innovations: (1) automated construction of
+heterogeneous knowledge graphs from external sources to capture semantic
+relations among diverse medical entities, (2) incorporating the heterogeneous
+knowledge graphs in few-shot classification using a label-wise attention
+mechanism. We construct DKEC using three online medical knowledge sources and
+evaluate it on a real-world Emergency Medical Services (EMS) dataset and a
+public electronic health record (EHR) dataset. Results show that DKEC
+outperforms the state-of-the-art label-wise attention networks and transformer
+models of different sizes, particularly for the few-shot classes. More
+importantly, it helps the smaller language models achieve comparable
+performance to large language models.
+},
+    year = {2023},
+    month = {10},
+    url = {http://arxiv.org/pdf/2310.07059v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Multi-step_Inference_over_Unstructured_Data,
+    title = {Multi-step Inference over Unstructured Data},
+    author = {Aditya Kalyanpur, Kailash Karthik Saravanakumar, Victor Barres, CJ McFate, Lori Moon, Nati Seifu, Maksim Eremeev, Jose Barrera, Abraham Bautista-Castillo, Eric Brown, David Ferrucci},
+    abstract = {  The advent of Large Language Models (LLMs) and Generative AI has
+revolutionized natural language applications across various domains. However,
+high-stakes decision-making tasks in fields such as medical, legal and finance
+require a level of precision, comprehensiveness, and logical consistency that
+pure LLM or Retrieval-Augmented-Generation (RAG) approaches often fail to
+deliver. At Elemental Cognition (EC), we have developed a neuro-symbolic AI
+platform to tackle these problems. The platform integrates fine-tuned LLMs for
+knowledge extraction and alignment with a robust symbolic reasoning engine for
+logical inference, planning and interactive constraint solving. We describe
+Cora, a Collaborative Research Assistant built on this platform, that is
+designed to perform complex research and discovery tasks in high-stakes
+domains. This paper discusses the multi-step inference challenges inherent in
+such domains, critiques the limitations of existing LLM-based methods, and
+demonstrates how Cora's neuro-symbolic approach effectively addresses these
+issues. We provide an overview of the system architecture, key algorithms for
+knowledge extraction and formal reasoning, and present preliminary evaluation
+results that highlight Cora's superior performance compared to well-known LLM
+and RAG baselines.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.17987v4},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Novel_Development_of_LLM_Driven_mCODE_Data_Model_for_Improved_Clinical
+__Trial_Matching_to_Enable_Standardization_and_Interoperability_in_Oncology
+__Research,
+    title = {Novel Development of LLM Driven mCODE Data Model for Improved Clinical
+  Trial Matching to Enable Standardization and Interoperability in Oncology
+  Research},
+    author = {Aarsh Shekhar, Mincheol Kim},
+    abstract = {  Each year, the lack of efficient data standardization and interoperability in
+cancer care contributes to the severe lack of timely and effective diagnosis,
+while constantly adding to the burden of cost, with cancer costs nationally
+reaching over $208 billion in 2023 alone. Traditional methods regarding
+clinical trial enrollment and clinical care in oncology are often manual,
+time-consuming, and lack a data-driven approach. This paper presents a novel
+framework to streamline standardization, interoperability, and exchange of
+cancer domains and enhance the integration of oncology-based EHRs across
+disparate healthcare systems. This paper utilizes advanced LLMs and Computer
+Engineering to streamline cancer clinical trials and discovery. By utilizing
+FHIR's resource-based approach and LLM-generated mCODE profiles, we ensure
+timely, accurate, and efficient sharing of patient information across disparate
+healthcare systems. Our methodology involves transforming unstructured patient
+treatment data, PDFs, free-text information, and progress notes into enriched
+mCODE profiles, facilitating seamless integration with our novel AI and
+ML-based clinical trial matching engine. The results of this study show a
+significant improvement in data standardization, with accuracy rates of our
+trained LLM peaking at over 92% with datasets consisting of thousands of
+patient data. Additionally, our LLM demonstrated an accuracy rate of 87% for
+SNOMED-CT, 90% for LOINC, and 84% for RxNorm codes. This trumps the current
+status quo, with LLMs such as GPT-4 and Claude's 3.5 peaking at an average of
+77%. This paper successfully underscores the potential of our standardization
+and interoperability framework, paving the way for more efficient and
+personalized cancer treatment.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.19826v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:MedBioLM:_Optimizing_Medical_and_Biological_QA_with_Fine-Tuned_Large
+__Language_Models_and_Retrieval-Augmented_Generation,
+    title = {MedBioLM: Optimizing Medical and Biological QA with Fine-Tuned Large
+  Language Models and Retrieval-Augmented Generation},
+    author = {Seonok Kim},
+    abstract = {  Large Language Models (LLMs) have demonstrated impressive capabilities across
+natural language processing tasks. However, their application to specialized
+domains such as medicine and biology requires further optimization to ensure
+factual accuracy, reliability, and contextual depth. We introduce MedBioLM, a
+domain-adapted biomedical question-answering model designed to enhance both
+short-form and long-form queries. By integrating fine-tuning and
+retrieval-augmented generation (RAG), MedBioLM dynamically incorporates
+domain-specific knowledge, improving reasoning abilities and factual accuracy.
+To evaluate its effectiveness, we fine-tuned the model on diverse biomedical QA
+datasets, covering structured multiple-choice assessments and complex clinical
+reasoning tasks. Fine-tuning significantly improves accuracy on benchmark
+datasets, while RAG enhances factual consistency. These results highlight the
+potential of domain-optimized LLMs in advancing biomedical research, medical
+education, and clinical decision support.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.03004v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Text2MDT:_Extracting_Medical_Decision_Trees_from_Medical_Texts,
+    title = {Text2MDT: Extracting Medical Decision Trees from Medical Texts},
+    author = {Wei Zhu, Wenfeng Li, Xing Tian, Pengfei Wang, Xiaoling Wang, Jin Chen, Yuanbin Wu, Yuan Ni, Guotong Xie},
+    abstract = {  Knowledge of the medical decision process, which can be modeled as medical
+decision trees (MDTs), is critical to build clinical decision support systems.
+However, the current MDT construction methods rely heavily on time-consuming
+and laborious manual annotation. In this work, we propose a novel task,
+Text2MDT, to explore the automatic extraction of MDTs from medical texts such
+as medical guidelines and textbooks. We normalize the form of the MDT and
+create an annotated Text-to-MDT dataset in Chinese with the participation of
+medical experts. We investigate two different methods for the Text2MDT tasks:
+(a) an end-to-end framework which only relies on a GPT style large language
+models (LLM) instruction tuning to generate all the node information and tree
+structures. (b) The pipeline framework which decomposes the Text2MDT task to
+three subtasks. Experiments on our Text2MDT dataset demonstrate that: (a) the
+end-to-end method basd on LLMs (7B parameters or larger) show promising
+results, and successfully outperform the pipeline methods. (b) The
+chain-of-thought (COT) prompting method \cite{Wei2022ChainOT} can improve the
+performance of the fine-tuned LLMs on the Text2MDT test set. (c) the
+lightweight pipelined method based on encoder-based pretrained models can
+perform comparably with LLMs with model complexity two magnititudes smaller.
+Our Text2MDT dataset is open-sourced at
+\url{https://tianchi.aliyun.com/dataset/95414}, and the source codes are
+open-sourced at \url{https://github.com/michael-wzhu/text2dt}.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2401.02034v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Cancer_Vaccine_Adjuvant_Name_Recognition_from_Biomedical_Literature
+__using_Large_Language_Models,
+    title = {Cancer Vaccine Adjuvant Name Recognition from Biomedical Literature
+  using Large Language Models},
+    author = {Hasin Rehana, Jie Zheng, Leo Yeh, Benu Bansal, Nur Bengisu Çam, Christianah Jemiyo, Brett McGregor, Arzucan Özgür, Yongqun He, Junguk Hur},
+    abstract = {  Motivation: An adjuvant is a chemical incorporated into vaccines that
+enhances their efficacy by improving the immune response. Identifying adjuvant
+names from cancer vaccine studies is essential for furthering research and
+enhancing immunotherapies. However, the manual curation from the constantly
+expanding biomedical literature poses significant challenges. This study
+explores the automated recognition of vaccine adjuvant names using Large
+Language Models (LLMs), specifically Generative Pretrained Transformers (GPT)
+and Large Language Model Meta AI (Llama). Methods: We utilized two datasets: 97
+clinical trial records from AdjuvareDB and 290 abstracts annotated with the
+Vaccine Adjuvant Compendium (VAC). GPT-4o and Llama 3.2 were employed in
+zero-shot and few-shot learning paradigms with up to four examples per prompt.
+Prompts explicitly targeted adjuvant names, testing the impact of contextual
+information such as substances or interventions. Outputs underwent automated
+and manual validation for accuracy and consistency. Results: GPT-4o attained
+100% Precision across all situations while exhibiting notable improve in Recall
+and F1-scores, particularly with incorporating interventions. On the VAC
+dataset, GPT-4o achieved a maximum F1-score of 77.32% with interventions,
+surpassing Llama-3.2-3B by approximately 2%. On the AdjuvareDB dataset, GPT-4o
+reached an F1-score of 81.67% for three-shot prompting with interventions,
+surpassing Llama-3.2-3 B's maximum F1-score of 65.62%. Conclusion: Our findings
+demonstrate that LLMs excel at identifying adjuvant names, including rare
+variations of naming representation. This study emphasizes the capability of
+LLMs to enhance cancer vaccine development by efficiently extracting insights.
+Future work aims to broaden the framework to encompass various biomedical
+literature and enhance model generalizability across various vaccines and
+adjuvants.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.09659v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Deep_learning-based_NLP_Data_Pipeline_for_EHR_Scanned_Document
+__Information_Extraction,
+    title = {Deep learning-based NLP Data Pipeline for EHR Scanned Document
+  Information Extraction},
+    author = {Enshuo Hsu, Ioannis Malagaris, Yong-Fang Kuo, Rizwana Sultana, Kirk Roberts},
+    abstract = {  Scanned documents in electronic health records (EHR) have been a challenge
+for decades, and are expected to stay in the foreseeable future. Current
+approaches for processing often include image preprocessing, optical character
+recognition (OCR), and text mining. However, there is limited work that
+evaluates the choice of image preprocessing methods, the selection of NLP
+models, and the role of document layout. The impact of each element remains
+unknown. We evaluated this method on a use case of two key indicators for sleep
+apnea, Apnea hypopnea index (AHI) and oxygen saturation (SaO2) values, from
+scanned sleep study reports. Our data that included 955 manually annotated
+reports was secondarily utilized from a previous study in the University of
+Texas Medical Branch. We performed image preprocessing: gray-scaling followed
+by 1 iteration of dilating and erode, and 20% contrast increasing. The OCR was
+implemented with the Tesseract OCR engine. A total of seven Bag-of-Words models
+(Logistic Regression, Ridge Regression, Lasso Regression, Support Vector
+Machine, k-Nearest Neighbor, Na\"ive Bayes, and Random Forest) and three deep
+learning-based models (BiLSTM, BERT, and Clinical BERT) were evaluated. We also
+evaluated the combinations of image preprocessing methods (gray-scaling, dilate
+& erode, increased contrast by 20%, increased contrast by 60%), and two deep
+learning architectures (with and without structured input that provides
+document layout information). Our proposed method using Clinical BERT reached
+an AUROC of 0.9743 and document accuracy of 94.76% for AHI, and an AUROC of
+0.9523, and document accuracy of 91.61% for SaO2. We demonstrated the proper
+use of image preprocessing and document layout could be beneficial to scanned
+document processing.
+},
+    year = {2021},
+    month = {09},
+    url = {http://arxiv.org/pdf/2110.11864v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Evaluating_LLM_Abilities_to_Understand_Tabular_Electronic_Health
+__Records:_A_Comprehensive_Study_of_Patient_Data_Extraction_and_Retrieval,
+    title = {Evaluating LLM Abilities to Understand Tabular Electronic Health
+  Records: A Comprehensive Study of Patient Data Extraction and Retrieval},
+    author = {Jesus Lovon, Martin Mouysset, Jo Oleiwan, Jose G. Moreno, Christine Damase-Michel, Lynda Tamine},
+    abstract = {  Electronic Health Record (EHR) tables pose unique challenges among which is
+the presence of hidden contextual dependencies between medical features with a
+high level of data dimensionality and sparsity. This study presents the first
+investigation into the abilities of LLMs to comprehend EHRs for patient data
+extraction and retrieval. We conduct extensive experiments using the MIMICSQL
+dataset to explore the impact of the prompt structure, instruction, context,
+and demonstration, of two backbone LLMs, Llama2 and Meditron, based on task
+performance. Through quantitative and qualitative analyses, our findings show
+that optimal feature selection and serialization methods can enhance task
+performance by up to 26.79% compared to naive approaches. Similarly, in-context
+learning setups with relevant example selection improve data extraction
+performance by 5.95%. Based on our study findings, we propose guidelines that
+we believe would help the design of LLM-based models to support health search.
+},
+    year = {2025},
+    month = {01},
+    url = {http://arxiv.org/pdf/2501.09384v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Natural_Language_Programming_in_Medicine:_Administering_Evidence_Based
+__Clinical_Workflows_with_Autonomous_Agents_Powered_by_Generative_Large
+__Language_Models,
+    title = {Natural Language Programming in Medicine: Administering Evidence Based
+  Clinical Workflows with Autonomous Agents Powered by Generative Large
+  Language Models},
+    author = {Akhil Vaid, Joshua Lampert, Juhee Lee, Ashwin Sawant, Donald Apakama, Ankit Sakhuja, Ali Soroush, Sarah Bick, Ethan Abbott, Hernando Gomez, Michael Hadley, Denise Lee, Isotta Landi, Son Q Duong, Nicole Bussola, Ismail Nabeel, Silke Muehlstedt, Silke Muehlstedt, Robert Freeman, Patricia Kovatch, Brendan Carr, Fei Wang, Benjamin Glicksberg, Edgar Argulian, Stamatios Lerakis, Rohan Khera, David L. Reich, Monica Kraft, Alexander Charney, Girish Nadkarni},
+    abstract = {  Generative Large Language Models (LLMs) hold significant promise in
+healthcare, demonstrating capabilities such as passing medical licensing exams
+and providing clinical knowledge. However, their current use as information
+retrieval tools is limited by challenges like data staleness, resource demands,
+and occasional generation of incorrect information. This study assessed the
+potential of LLMs to function as autonomous agents in a simulated tertiary care
+medical center, using real-world clinical cases across multiple specialties.
+Both proprietary and open-source LLMs were evaluated, with Retrieval Augmented
+Generation (RAG) enhancing contextual relevance. Proprietary models,
+particularly GPT-4, generally outperformed open-source models, showing improved
+guideline adherence and more accurate responses with RAG. The manual evaluation
+by expert clinicians was crucial in validating models' outputs, underscoring
+the importance of human oversight in LLM operation. Further, the study
+emphasizes Natural Language Programming (NLP) as the appropriate paradigm for
+modifying model behavior, allowing for precise adjustments through tailored
+prompts and real-world interactions. This approach highlights the potential of
+LLMs to significantly enhance and supplement clinical decision-making, while
+also emphasizing the value of continuous expert involvement and the flexibility
+of NLP to ensure their reliability and effectiveness in healthcare settings.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2401.02851v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Development_and_Testing_of_Retrieval_Augmented_Generation_in_Large
+__Language_Models_--_A_Case_Study_Report,
+    title = {Development and Testing of Retrieval Augmented Generation in Large
+  Language Models -- A Case Study Report},
+    author = {YuHe Ke, Liyuan Jin, Kabilan Elangovan, Hairil Rizal Abdullah, Nan Liu, Alex Tiong Heng Sia, Chai Rick Soh, Joshua Yi Min Tung, Jasmine Chiat Ling Ong, Daniel Shu Wei Ting},
+    abstract = {  Purpose: Large Language Models (LLMs) hold significant promise for medical
+applications. Retrieval Augmented Generation (RAG) emerges as a promising
+approach for customizing domain knowledge in LLMs. This case study presents the
+development and evaluation of an LLM-RAG pipeline tailored for healthcare,
+focusing specifically on preoperative medicine.
+  Methods: We developed an LLM-RAG model using 35 preoperative guidelines and
+tested it against human-generated responses, with a total of 1260 responses
+evaluated. The RAG process involved converting clinical documents into text
+using Python-based frameworks like LangChain and Llamaindex, and processing
+these texts into chunks for embedding and retrieval. Vector storage techniques
+and selected embedding models to optimize data retrieval, using Pinecone for
+vector storage with a dimensionality of 1536 and cosine similarity for loss
+metrics. Human-generated answers, provided by junior doctors, were used as a
+comparison.
+  Results: The LLM-RAG model generated answers within an average of 15-20
+seconds, significantly faster than the 10 minutes typically required by humans.
+Among the basic LLMs, GPT4.0 exhibited the best accuracy of 80.1%. This
+accuracy was further increased to 91.4% when the model was enhanced with RAG.
+Compared to the human-generated instructions, which had an accuracy of 86.3%,
+the performance of the GPT4.0 RAG model demonstrated non-inferiority (p=0.610).
+  Conclusions: In this case study, we demonstrated a LLM-RAG model for
+healthcare implementation. The pipeline shows the advantages of grounded
+knowledge, upgradability, and scalability as important aspects of healthcare
+LLM deployment.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2402.01733v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Adaptive_Knowledge_Graphs_Enhance_Medical_Question_Answering:_Bridging
+__the_Gap_Between_LLMs_and_Evolving_Medical_Knowledge,
+    title = {Adaptive Knowledge Graphs Enhance Medical Question Answering: Bridging
+  the Gap Between LLMs and Evolving Medical Knowledge},
+    author = {Mohammad Reza Rezaei, Reza Saadati Fard, Jayson Parker, Rahul G. Krishnan, Milad Lankarany},
+    abstract = {  Large Language Models (LLMs) have significantly advanced medical
+question-answering by leveraging extensive clinical data and medical
+literature. However, the rapid evolution of medical knowledge and the
+labor-intensive process of manually updating domain-specific resources pose
+challenges to the reliability of these systems. To address this, we introduce
+Adaptive Medical Graph-RAG (AMG-RAG), a comprehensive framework that automates
+the construction and continuous updating of medical knowledge graphs,
+integrates reasoning, and retrieves current external evidence, such as PubMed
+and WikiSearch. By dynamically linking new findings and complex medical
+concepts, AMG-RAG not only improves accuracy but also enhances interpretability
+in medical queries.
+  Evaluations on the MEDQA and MEDMCQA benchmarks demonstrate the effectiveness
+of AMG-RAG, achieving an F1 score of 74.1 percent on MEDQA and an accuracy of
+66.34 percent on MEDMCQA, outperforming both comparable models and those 10 to
+100 times larger. Notably, these improvements are achieved without increasing
+computational overhead, highlighting the critical role of automated knowledge
+graph generation and external evidence retrieval in delivering up-to-date,
+trustworthy medical insights.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.13010v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Document-level_Clinical_Entity_and_Relation_Extraction_via_Knowledge
+__Base-Guided_Generation,
+    title = {Document-level Clinical Entity and Relation Extraction via Knowledge
+  Base-Guided Generation},
+    author = {Kriti Bhattarai, Inez Y. Oh, Zachary B. Abrams, Albert M. Lai},
+    abstract = {  Generative pre-trained transformer (GPT) models have shown promise in
+clinical entity and relation extraction tasks because of their precise
+extraction and contextual understanding capability. In this work, we further
+leverage the Unified Medical Language System (UMLS) knowledge base to
+accurately identify medical concepts and improve clinical entity and relation
+extraction at the document level. Our framework selects UMLS concepts relevant
+to the text and combines them with prompts to guide language models in
+extracting entities. Our experiments demonstrate that this initial concept
+mapping and the inclusion of these mapped concepts in the prompts improves
+extraction results compared to few-shot extraction tasks on generic language
+models that do not leverage UMLS. Further, our results show that this approach
+is more effective than the standard Retrieval Augmented Generation (RAG)
+technique, where retrieved data is compared with prompt embeddings to generate
+results. Overall, we find that integrating UMLS concepts with GPT models
+significantly improves entity and relation identification, outperforming the
+baseline and RAG models. By combining the precise concept mapping capability of
+knowledge-based approaches like UMLS with the contextual understanding
+capability of GPT, our method highlights the potential of these approaches in
+specialized domains like healthcare.
+},
+    year = {2024},
+    month = {07},
+    url = {http://arxiv.org/pdf/2407.10021v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Knowledge_Graph-Driven_Retrieval-Augmented_Generation:_Integrating
+__Deepseek-R1_with_Weaviate_for_Advanced_Chatbot_Applications,
+    title = {Knowledge Graph-Driven Retrieval-Augmented Generation: Integrating
+  Deepseek-R1 with Weaviate for Advanced Chatbot Applications},
+    author = {Alexandru Lecu, Adrian Groza, Lezan Hawizy},
+    abstract = {  Large language models (LLMs) have significantly advanced the field of natural
+language generation. However, they frequently generate unverified outputs,
+which compromises their reliability in critical applications. In this study, we
+propose an innovative framework that combines structured biomedical knowledge
+with LLMs through a retrieval-augmented generation technique. Our system
+develops a thorough knowledge graph by identifying and refining causal
+relationships and named entities from medical abstracts related to age-related
+macular degeneration (AMD). Using a vector-based retrieval process and a
+locally deployed language model, our framework produces responses that are both
+contextually relevant and verifiable, with direct references to clinical
+evidence. Experimental results show that this method notably decreases
+hallucinations, enhances factual precision, and improves the clarity of
+generated responses, providing a robust solution for advanced biomedical
+chatbot applications.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.11108v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:QuaLLM-Health:_An_Adaptation_of_an_LLM-Based_Framework_for_Quantitative
+__Data_Extraction_from_Online_Health_Discussions,
+    title = {QuaLLM-Health: An Adaptation of an LLM-Based Framework for Quantitative
+  Data Extraction from Online Health Discussions},
+    author = {Ramez Kouzy, Roxanna Attar-Olyaee, Michael K. Rooney, Comron J. Hassanzadeh, Junyi Jessy Li, Osama Mohamad},
+    abstract = {  Health-related discussions on social media like Reddit offer valuable
+insights, but extracting quantitative data from unstructured text is
+challenging. In this work, we present an adapted framework from QuaLLM into
+QuaLLM-Health for extracting clinically relevant quantitative data from Reddit
+discussions about glucagon-like peptide-1 (GLP-1) receptor agonists using large
+language models (LLMs). We collected 410k posts and comments from five
+GLP-1-related communities using the Reddit API in July 2024. After filtering
+for cancer-related discussions, 2,059 unique entries remained. We developed
+annotation guidelines to manually extract variables such as cancer
+survivorship, family cancer history, cancer types mentioned, risk perceptions,
+and discussions with physicians. Two domain-experts independently annotated a
+random sample of 100 entries to create a gold-standard dataset. We then
+employed iterative prompt engineering with OpenAI's "GPT-4o-mini" on the
+gold-standard dataset to build an optimized pipeline that allowed us to extract
+variables from the large dataset. The optimized LLM achieved accuracies above
+0.85 for all variables, with precision, recall and F1 score macro averaged >
+0.90, indicating balanced performance. Stability testing showed a 95% match
+rate across runs, confirming consistency. Applying the framework to the full
+dataset enabled efficient extraction of variables necessary for downstream
+analysis, costing under $3 and completing in approximately one hour.
+QuaLLM-Health demonstrates that LLMs can effectively and efficiently extract
+clinically relevant quantitative data from unstructured social media content.
+Incorporating human expertise and iterative prompt refinement ensures accuracy
+and reliability. This methodology can be adapted for large-scale analysis of
+patient-generated data across various health domains, facilitating valuable
+insights for healthcare research.
+},
+    year = {2024},
+    month = {11},
+    url = {http://arxiv.org/pdf/2411.17967v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Development_and_Testing_of_a_Novel_Large_Language_Model-Based_Clinical
+__Decision_Support_Systems_for_Medication_Safety_in_12_Clinical_Specialties,
+    title = {Development and Testing of a Novel Large Language Model-Based Clinical
+  Decision Support Systems for Medication Safety in 12 Clinical Specialties},
+    author = {Jasmine Chiat Ling Ong, Liyuan Jin, Kabilan Elangovan, Gilbert Yong San Lim, Daniel Yan Zheng Lim, Gerald Gui Ren Sng, Yuhe Ke, Joshua Yi Min Tung, Ryan Jian Zhong, Christopher Ming Yao Koh, Keane Zhi Hao Lee, Xiang Chen, Jack Kian Chng, Aung Than, Ken Junyang Goh, Daniel Shu Wei Ting},
+    abstract = {  Importance: We introduce a novel Retrieval Augmented Generation (RAG)-Large
+Language Model (LLM) framework as a Clinical Decision Support Systems (CDSS) to
+support safe medication prescription.
+  Objective: To evaluate the efficacy of LLM-based CDSS in correctly
+identifying medication errors in different patient case vignettes from diverse
+medical and surgical sub-disciplines, against a human expert panel derived
+ground truth. We compared performance for under 2 different CDSS practical
+healthcare integration modalities: LLM-based CDSS alone (fully autonomous mode)
+vs junior pharmacist + LLM-based CDSS (co-pilot, assistive mode).
+  Design, Setting, and Participants: Utilizing a RAG model with
+state-of-the-art medically-related LLMs (GPT-4, Gemini Pro 1.0 and Med-PaLM 2),
+this study used 61 prescribing error scenarios embedded into 23 complex
+clinical vignettes across 12 different medical and surgical specialties. A
+multidisciplinary expert panel assessed these cases for Drug-Related Problems
+(DRPs) using the PCNE classification and graded severity / potential for harm
+using revised NCC MERP medication error index. We compared.
+  Results RAG-LLM performed better compared to LLM alone. When employed in a
+co-pilot mode, accuracy, recall, and F1 scores were optimized, indicating
+effectiveness in identifying moderate to severe DRPs. The accuracy of DRP
+detection with RAG-LLM improved in several categories but at the expense of
+lower precision.
+  Conclusions This study established that a RAG-LLM based CDSS significantly
+boosts the accuracy of medication error identification when used alongside
+junior pharmacists (co-pilot), with notable improvements in detecting severe
+DRPs. This study also illuminates the comparative performance of current
+state-of-the-art LLMs in RAG-based CDSS systems.
+},
+    year = {2024},
+    month = {01},
+    url = {http://arxiv.org/pdf/2402.01741v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Performance_of_Large_Language_Models_in_Technical_MRI_Question
+__Answering:_A_Comparative_Study,
+    title = {Performance of Large Language Models in Technical MRI Question
+  Answering: A Comparative Study},
+    author = {Alan B McMillan},
+    abstract = {  Background: Advances in artificial intelligence, particularly large language
+models (LLMs), have the potential to enhance technical expertise in magnetic
+resonance imaging (MRI), regardless of operator skill or geographic location.
+  Methods: We assessed the accuracy of several LLMs in answering 570 technical
+MRI questions derived from a standardized review book. The questions spanned
+nine MRI topics, including Basic Principles, Image Production, and Safety.
+Closed-source models (e.g., OpenAI's o1 Preview, GPT-4o, GPT-4 Turbo, and
+Claude 3.5 Haiku) and open-source models (e.g., Phi 3.5 Mini, Llama 3.1,
+smolLM2) were tested. Models were queried using standardized prompts via the
+LangChain framework, and responses were graded against correct answers using an
+automated scoring protocol. Accuracy, defined as the proportion of correct
+answers, was the primary outcome.
+  Results: The closed-source o1 Preview model achieved the highest accuracy
+(94%), exceeding the random-guess baseline (26.5%). GPT-4o and o1 Mini scored
+88%, and GPT-4 Turbo and Claude 3.5 Haiku each scored 84%. Among open-source
+models, Phi 3.5 Mini performed well, achieving 78% accuracy, comparable to
+several closed-source models. Accuracy was highest in Basic Principles and
+Instrumentation categories but lower in Image Weighting and Contrast, History,
+and Artifacts and Corrections.
+  Conclusions: LLMs exhibit high accuracy in addressing technical MRI
+questions, suggesting their potential to standardize and enhance MRI practice.
+These models may improve image quality and consistency across varied clinical
+environments. Further studies are needed to refine LLMs for clinical use and
+integrate them into MRI workflows.
+},
+    year = {2024},
+    month = {11},
+    url = {http://arxiv.org/pdf/2411.12238v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Unlocking_Historical_Clinical_Trial_Data_with_ALIGN:_A_Compositional
+__Large_Language_Model_System_for_Medical_Coding,
+    title = {Unlocking Historical Clinical Trial Data with ALIGN: A Compositional
+  Large Language Model System for Medical Coding},
+    author = {Nabeel Seedat, Caterina Tozzi, Andrea Hita Ardiaca, Mihaela van der Schaar, James Weatherall, Adam Taylor},
+    abstract = {  The reuse of historical clinical trial data has significant potential to
+accelerate medical research and drug development. However, interoperability
+challenges, particularly with missing medical codes, hinders effective data
+integration across studies. While Large Language Models (LLMs) offer a
+promising solution for automated coding without labeled data, current
+approaches face challenges on complex coding tasks. We introduce ALIGN, a novel
+compositional LLM-based system for automated, zero-shot medical coding. ALIGN
+follows a three-step process: (1) diverse candidate code generation; (2)
+self-evaluation of codes and (3) confidence scoring and uncertainty estimation
+enabling human deferral to ensure reliability. We evaluate ALIGN on harmonizing
+medication terms into Anatomical Therapeutic Chemical (ATC) and medical history
+terms into Medical Dictionary for Regulatory Activities (MedDRA) codes
+extracted from 22 immunology trials. ALIGN outperformed the LLM baselines,
+while also providing capabilities for trustworthy deployment. For MedDRA
+coding, ALIGN achieved high accuracy across all levels, matching RAG and
+excelling at the most specific levels (87-90% for HLGT). For ATC coding, ALIGN
+demonstrated superior performance, particularly at lower hierarchy levels (ATC
+Level 4), with 72-73% overall accuracy and 86-89% accuracy for common
+medications, outperforming baselines by 7-22%. ALIGN's uncertainty-based
+deferral improved accuracy by 17% to 90% accuracy with 30% deferral, notably
+enhancing performance on uncommon medications. ALIGN achieves this
+cost-efficiently at \$0.0007 and \$0.02 per code for GPT-4o-mini and GPT-4o,
+reducing barriers to clinical adoption. ALIGN advances automated medical coding
+for clinical trial data, contributing to enhanced data interoperability and
+reusability, positioning it as a promising tool to improve clinical research
+and accelerate drug development.
+},
+    year = {2024},
+    month = {11},
+    url = {http://arxiv.org/pdf/2411.13163v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:JMLR:_Joint_Medical_LLM_and_Retrieval_Training_for_Enhancing_Reasoning
+__and_Professional_Question_Answering_Capability,
+    title = {JMLR: Joint Medical LLM and Retrieval Training for Enhancing Reasoning
+  and Professional Question Answering Capability},
+    author = {Junda Wang, Zhichao Yang, Zonghai Yao, Hong Yu},
+    abstract = {  Large Language Models (LLMs) have demonstrated a remarkable potential in
+medical knowledge acquisition and question-answering. However, LLMs can
+potentially hallucinate and yield factually incorrect outcomes, even with
+domain-specific pretraining. Previously, retrieval augmented generation (RAG)
+has limited success in addressing hallucinations. Unlike previous methods in
+RAG where the retrieval model was trained separately from the LLM, we introduce
+JMLR (for Jointly trains LLM and information Retrieval) during the fine-tuning
+phase. The synchronized training mechanism enhances JMLR's ability to retrieve
+clinical guidelines and leverage medical knowledge to reason and answer
+questions and reduces the demand for computational resources. We evaluated JMLR
+on the important medical question-answering application. Our experimental
+results demonstrate that JMLR-13B (70.5%) outperforms a previous
+state-of-the-art open-source model using conventional pre-training and
+fine-tuning Meditron-70B (68.9%) and Llama2-13B with RAG (67.7%) on a medical
+question-answering dataset. Comprehensive evaluations reveal JMLR-13B enhances
+reasoning quality and reduces hallucinations better than Claude3-Opus.
+Additionally, JMLR-13B (148 GPU hours) also trains much faster than
+Meditron-70B (42630 GPU hours). Through this work, we provide a new and
+efficient knowledge enhancement method for healthcare, demonstrating the
+potential of integrating retrieval and LLM training for medical
+question-answering systems.
+},
+    year = {2024},
+    month = {02},
+    url = {http://arxiv.org/pdf/2402.17887v4},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:README:_Bridging_Medical_Jargon_and_Lay_Understanding_for_Patient
+__Education_through_Data-Centric_NLP,
+    title = {README: Bridging Medical Jargon and Lay Understanding for Patient
+  Education through Data-Centric NLP},
+    author = {Zonghai Yao, Nandyala Siddharth Kantu, Guanghao Wei, Hieu Tran, Zhangqi Duan, Sunjae Kwon, Zhichao Yang, README annotation team, Hong Yu},
+    abstract = {  The advancement in healthcare has shifted focus toward patient-centric
+approaches, particularly in self-care and patient education, facilitated by
+access to Electronic Health Records (EHR). However, medical jargon in EHRs
+poses significant challenges in patient comprehension. To address this, we
+introduce a new task of automatically generating lay definitions, aiming to
+simplify complex medical terms into patient-friendly lay language. We first
+created the README dataset, an extensive collection of over 50,000 unique
+(medical term, lay definition) pairs and 300,000 mentions, each offering
+context-aware lay definitions manually annotated by domain experts. We have
+also engineered a data-centric Human-AI pipeline that synergizes data
+filtering, augmentation, and selection to improve data quality. We then used
+README as the training data for models and leveraged a Retrieval-Augmented
+Generation method to reduce hallucinations and improve the quality of model
+outputs. Our extensive automatic and human evaluations demonstrate that
+open-source mobile-friendly models, when fine-tuned with high-quality data, are
+capable of matching or even surpassing the performance of state-of-the-art
+closed-source large language models like ChatGPT. This research represents a
+significant stride in closing the knowledge gap in patient education and
+advancing patient-centric healthcare solutions.
+},
+    year = {2023},
+    month = {12},
+    url = {http://arxiv.org/pdf/2312.15561v5},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Autonomous_Artificial_Intelligence_Agents_for_Clinical_Decision_Making
+__in_Oncology,
+    title = {Autonomous Artificial Intelligence Agents for Clinical Decision Making
+  in Oncology},
+    author = {Dyke Ferber, Omar S. M. El Nahhas, Georg Wölflein, Isabella C. Wiest, Jan Clusmann, Marie-Elisabeth Leßman, Sebastian Foersch, Jacqueline Lammert, Maximilian Tschochohei, Dirk Jäger, Manuel Salto-Tellez, Nikolaus Schultz, Daniel Truhn, Jakob Nikolas Kather},
+    abstract = {  Multimodal artificial intelligence (AI) systems have the potential to enhance
+clinical decision-making by interpreting various types of medical data.
+However, the effectiveness of these models across all medical fields is
+uncertain. Each discipline presents unique challenges that need to be addressed
+for optimal performance. This complexity is further increased when attempting
+to integrate different fields into a single model. Here, we introduce an
+alternative approach to multimodal medical AI that utilizes the generalist
+capabilities of a large language model (LLM) as a central reasoning engine.
+This engine autonomously coordinates and deploys a set of specialized medical
+AI tools. These tools include text, radiology and histopathology image
+interpretation, genomic data processing, web searches, and document retrieval
+from medical guidelines. We validate our system across a series of clinical
+oncology scenarios that closely resemble typical patient care workflows. We
+show that the system has a high capability in employing appropriate tools
+(97%), drawing correct conclusions (93.6%), and providing complete (94%), and
+helpful (89.2%) recommendations for individual patient cases while consistently
+referencing relevant literature (82.5%) upon instruction. This work provides
+evidence that LLMs can effectively plan and execute domain-specific models to
+retrieve or synthesize new information when used as autonomous agents. This
+enables them to function as specialist, patient-tailored clinical assistants.
+It also simplifies regulatory compliance by allowing each component tool to be
+individually validated and approved. We believe, that our work can serve as a
+proof-of-concept for more advanced LLM-agents in the medical domain.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.04667v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Small_Models_are_LLM_Knowledge_Triggers_on_Medical_Tabular_Prediction,
+    title = {Small Models are LLM Knowledge Triggers on Medical Tabular Prediction},
+    author = {Jiahuan Yan, Jintai Chen, Chaowen Hu, Bo Zheng, Yaojun Hu, Jimeng Sun, Jian Wu},
+    abstract = {  Recent development in large language models (LLMs) has demonstrated
+impressive domain proficiency on unstructured textual or multi-modal tasks.
+However, despite with intrinsic world knowledge, their application on
+structured tabular data prediction still lags behind, primarily due to the
+numerical insensitivity and modality discrepancy that brings a gap between LLM
+reasoning and statistical tabular learning. Unlike textual or vision data
+(e.g., electronic clinical notes or medical imaging data), tabular data is
+often presented in heterogeneous numerical values (e.g., CBC reports). This
+ubiquitous data format requires intensive expert annotation, and its numerical
+nature limits LLMs' capability to effectively transfer untapped domain
+expertise. In this paper, we propose SERSAL, a general self-prompting method by
+synergy learning with small models to enhance LLM tabular prediction in an
+unsupervised manner. Specifically, SERSAL utilizes the LLM's prior outcomes as
+original soft noisy annotations, which are dynamically leveraged to teach a
+better small student model. Reversely, the outcomes from the trained small
+model are used to teach the LLM to further refine its real capability. This
+process can be repeatedly applied to gradually distill refined knowledge for
+continuous progress. Comprehensive experiments on widely used medical domain
+tabular datasets show that, without access to gold labels, applying SERSAL to
+OpenAI GPT reasoning process attains substantial improvement compared to
+linguistic prompting methods, which serves as an orthogonal direction for
+tabular LLM, and increasing prompting bonus is observed as more powerful LLMs
+appear.
+},
+    year = {2024},
+    month = {03},
+    url = {http://arxiv.org/pdf/2403.01570v3},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:IITK_at_SemEval-2024_Task_2:_Exploring_the_Capabilities_of_LLMs_for_Safe
+__Biomedical_Natural_Language_Inference_for_Clinical_Trials,
+    title = {IITK at SemEval-2024 Task 2: Exploring the Capabilities of LLMs for Safe
+  Biomedical Natural Language Inference for Clinical Trials},
+    author = {Shreyasi Mandal, Ashutosh Modi},
+    abstract = {  Large Language models (LLMs) have demonstrated state-of-the-art performance
+in various natural language processing (NLP) tasks across multiple domains, yet
+they are prone to shortcut learning and factual inconsistencies. This research
+investigates LLMs' robustness, consistency, and faithful reasoning when
+performing Natural Language Inference (NLI) on breast cancer Clinical Trial
+Reports (CTRs) in the context of SemEval 2024 Task 2: Safe Biomedical Natural
+Language Inference for Clinical Trials. We examine the reasoning capabilities
+of LLMs and their adeptness at logical problem-solving. A comparative analysis
+is conducted on pre-trained language models (PLMs), GPT-3.5, and Gemini Pro
+under zero-shot settings using Retrieval-Augmented Generation (RAG) framework,
+integrating various reasoning chains. The evaluation yields an F1 score of
+0.69, consistency of 0.71, and a faithfulness score of 0.90 on the test
+dataset.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.04510v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Integrating_Knowledge_Retrieval_and_Large_Language_Models_for_Clinical
+__Report_Correction,
+    title = {Integrating Knowledge Retrieval and Large Language Models for Clinical
+  Report Correction},
+    author = {Jinge Wu, Zhaolong Wu, Ruizhe Li, Abul Hasan, Yunsoo Kim, Jason P. Y. Cheung, Teng Zhang, Honghan Wu},
+    abstract = {  This study proposes an approach for error correction in radiology reports,
+leveraging large language models (LLMs) and retrieval-augmented generation
+(RAG) techniques. The proposed framework employs a novel internal+external
+retrieval mechanism to extract relevant medical entities and relations from the
+report of interest and an external knowledge source. A three-stage inference
+process is introduced, decomposing the task into error detection, localization,
+and correction subtasks, which enhances the explainability and performance of
+the system. The effectiveness of the approach is evaluated using a benchmark
+dataset created by corrupting real-world radiology reports with realistic
+errors, guided by domain experts. Experimental results demonstrate the benefits
+of the proposed methods, with the combination of internal and external
+retrieval significantly improving the accuracy of error detection,
+localization, and correction across various state-of-the-art LLMs. The findings
+contribute to the development of more robust and reliable error correction
+systems for clinical documentation.
+},
+    year = {2024},
+    month = {06},
+    url = {http://arxiv.org/pdf/2406.15045v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Prompt_Injection_Attacks_on_Large_Language_Models_in_Oncology,
+    title = {Prompt Injection Attacks on Large Language Models in Oncology},
+    author = {Jan Clusmann, Dyke Ferber, Isabella C. Wiest, Carolin V. Schneider, Titus J. Brinker, Sebastian Foersch, Daniel Truhn, Jakob N. Kather},
+    abstract = {  Vision-language artificial intelligence models (VLMs) possess medical
+knowledge and can be employed in healthcare in numerous ways, including as
+image interpreters, virtual scribes, and general decision support systems.
+However, here, we demonstrate that current VLMs applied to medical tasks
+exhibit a fundamental security flaw: they can be attacked by prompt injection
+attacks, which can be used to output harmful information just by interacting
+with the VLM, without any access to its parameters. We performed a quantitative
+study to evaluate the vulnerabilities to these attacks in four state of the art
+VLMs which have been proposed to be of utility in healthcare: Claude 3 Opus,
+Claude 3.5 Sonnet, Reka Core, and GPT-4o. Using a set of N=297 attacks, we show
+that all of these models are susceptible. Specifically, we show that embedding
+sub-visual prompts in medical imaging data can cause the model to provide
+harmful output, and that these prompts are non-obvious to human observers.
+Thus, our study demonstrates a key vulnerability in medical VLMs which should
+be mitigated before widespread clinical adoption.
+},
+    year = {2024},
+    month = {07},
+    url = {http://arxiv.org/pdf/2407.18981v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:oRetrieval_Augmented_Generation_for_10_Large_Language_Models_and_its
+__Generalizability_in_Assessing_Medical_Fitness,
+    title = {oRetrieval Augmented Generation for 10 Large Language Models and its
+  Generalizability in Assessing Medical Fitness},
+    author = {Yu He Ke, Liyuan Jin, Kabilan Elangovan, Hairil Rizal Abdullah, Nan Liu, Alex Tiong Heng Sia, Chai Rick Soh, Joshua Yi Min Tung, Jasmine Chiat Ling Ong, Chang-Fu Kuo, Shao-Chun Wu, Vesela P. Kovacheva, Daniel Shu Wei Ting},
+    abstract = {  Large Language Models (LLMs) show potential for medical applications but
+often lack specialized clinical knowledge. Retrieval Augmented Generation (RAG)
+allows customization with domain-specific information, making it suitable for
+healthcare. This study evaluates the accuracy, consistency, and safety of RAG
+models in determining fitness for surgery and providing preoperative
+instructions. We developed LLM-RAG models using 35 local and 23 international
+preoperative guidelines and tested them against human-generated responses. A
+total of 3,682 responses were evaluated. Clinical documents were processed
+using Llamaindex, and 10 LLMs, including GPT3.5, GPT4, and Claude-3, were
+assessed. Fourteen clinical scenarios were analyzed, focusing on seven aspects
+of preoperative instructions. Established guidelines and expert judgment were
+used to determine correct responses, with human-generated answers serving as
+comparisons. The LLM-RAG models generated responses within 20 seconds,
+significantly faster than clinicians (10 minutes). The GPT4 LLM-RAG model
+achieved the highest accuracy (96.4% vs. 86.6%, p=0.016), with no
+hallucinations and producing correct instructions comparable to clinicians.
+Results were consistent across both local and international guidelines. This
+study demonstrates the potential of LLM-RAG models for preoperative healthcare
+tasks, highlighting their efficiency, scalability, and reliability.
+},
+    year = {2024},
+    month = {10},
+    url = {http://arxiv.org/pdf/2410.08431v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Beyond_Self-Consistency:_Ensemble_Reasoning_Boosts_Consistency_and
+__Accuracy_of_LLMs_in_Cancer_Staging,
+    title = {Beyond Self-Consistency: Ensemble Reasoning Boosts Consistency and
+  Accuracy of LLMs in Cancer Staging},
+    author = {Chia-Hsuan Chang, Mary M. Lucas, Yeawon Lee, Christopher C. Yang, Grace Lu-Yao},
+    abstract = {  Advances in large language models (LLMs) have encouraged their adoption in
+the healthcare domain where vital clinical information is often contained in
+unstructured notes. Cancer staging status is available in clinical reports, but
+it requires natural language processing to extract the status from the
+unstructured text. With the advance in clinical-oriented LLMs, it is promising
+to extract such status without extensive efforts in training the algorithms.
+Prompting approaches of the pre-trained LLMs that elicit a model's reasoning
+process, such as chain-of-thought, may help to improve the trustworthiness of
+the generated responses. Using self-consistency further improves model
+performance, but often results in inconsistent generations across the multiple
+reasoning paths. In this study, we propose an ensemble reasoning approach with
+the aim of improving the consistency of the model generations. Using an open
+access clinical large language model to determine the pathologic cancer stage
+from real-world pathology reports, we show that the ensemble reasoning approach
+is able to improve both the consistency and performance of the LLM in
+determining cancer stage, thereby demonstrating the potential to use these
+models in clinical or other domains where reliability and trustworthiness are
+critical.
+},
+    year = {2024},
+    month = {04},
+    url = {http://arxiv.org/pdf/2404.13149v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Aligning_Large_Language_Models_for_Clinical_Tasks,
+    title = {Aligning Large Language Models for Clinical Tasks},
+    author = {Supun Manathunga, Isuru Hettigoda},
+    abstract = {  Large Language Models (LLMs) have demonstrated remarkable adaptability,
+showcasing their capacity to excel in tasks for which they were not explicitly
+trained. However, despite their impressive natural language processing (NLP)
+capabilities, effective alignment of LLMs remains a crucial challenge when
+deploying them for specific clinical applications. The ability to generate
+responses with factually accurate content and to engage in non-trivial
+reasoning steps are crucial for the LLMs to be eligible for applications in
+clinical medicine. Employing a combination of techniques including
+instruction-tuning and in-prompt strategies like few-shot and chain-of-thought
+prompting has significantly enhanced the performance of LLMs. Our proposed
+alignment strategy for medical question-answering, known as
+'expand-guess-refine', offers a parameter and data-efficient solution. A
+preliminary analysis of this method demonstrated outstanding performance,
+achieving a score of 70.63% on a subset of questions sourced from the USMLE
+dataset.
+},
+    year = {2023},
+    month = {09},
+    url = {http://arxiv.org/pdf/2309.02884v2},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Improving_Representation_Learning_of_Complex_Critical_Care_Data_with
+__ICU-BERT,
+    title = {Improving Representation Learning of Complex Critical Care Data with
+  ICU-BERT},
+    author = {Ricardo Santos, André V. Carreiro, Xi Peng, Hugo Gamboa, Holger Fröhlich},
+    abstract = {  The multivariate, asynchronous nature of real-world clinical data, such as
+that generated in Intensive Care Units (ICUs), challenges traditional AI-based
+decision-support systems. These often assume data regularity and feature
+independence and frequently rely on limited data scopes and manual feature
+engineering. The potential of generative AI technologies has not yet been fully
+exploited to analyze clinical data. We introduce ICU-BERT, a transformer-based
+model pre-trained on the MIMIC-IV database using a multi-task scheme to learn
+robust representations of complex ICU data with minimal preprocessing. ICU-BERT
+employs a multi-token input strategy, incorporating dense embeddings from a
+biomedical Large Language Model to learn a generalizable representation of
+complex and multivariate ICU data. With an initial evaluation of five tasks and
+four additional ICU datasets, ICU-BERT results indicate that ICU-BERT either
+compares to or surpasses current performance benchmarks by leveraging
+fine-tuning. By integrating structured and unstructured data, ICU-BERT advances
+the use of foundational models in medical informatics, offering an adaptable
+solution for clinical decision support across diverse applications.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.19593v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:MALADE:_Orchestration_of_LLM-powered_Agents_with_Retrieval_Augmented
+__Generation_for_Pharmacovigilance,
+    title = {MALADE: Orchestration of LLM-powered Agents with Retrieval Augmented
+  Generation for Pharmacovigilance},
+    author = {Jihye Choi, Nils Palumbo, Prasad Chalasani, Matthew M. Engelhard, Somesh Jha, Anivarya Kumar, David Page},
+    abstract = {  In the era of Large Language Models (LLMs), given their remarkable text
+understanding and generation abilities, there is an unprecedented opportunity
+to develop new, LLM-based methods for trustworthy medical knowledge synthesis,
+extraction and summarization. This paper focuses on the problem of
+Pharmacovigilance (PhV), where the significance and challenges lie in
+identifying Adverse Drug Events (ADEs) from diverse text sources, such as
+medical literature, clinical notes, and drug labels. Unfortunately, this task
+is hindered by factors including variations in the terminologies of drugs and
+outcomes, and ADE descriptions often being buried in large amounts of narrative
+text. We present MALADE, the first effective collaborative multi-agent system
+powered by LLM with Retrieval Augmented Generation for ADE extraction from drug
+label data. This technique involves augmenting a query to an LLM with relevant
+information extracted from text resources, and instructing the LLM to compose a
+response consistent with the augmented data. MALADE is a general LLM-agnostic
+architecture, and its unique capabilities are: (1) leveraging a variety of
+external sources, such as medical literature, drug labels, and FDA tools (e.g.,
+OpenFDA drug information API), (2) extracting drug-outcome association in a
+structured format along with the strength of the association, and (3) providing
+explanations for established associations. Instantiated with GPT-4 Turbo or
+GPT-4o, and FDA drug label data, MALADE demonstrates its efficacy with an Area
+Under ROC Curve of 0.90 against the OMOP Ground Truth table of ADEs. Our
+implementation leverages the Langroid multi-agent LLM framework and can be
+found at https://github.com/jihyechoi77/malade.
+},
+    year = {2024},
+    month = {08},
+    url = {http://arxiv.org/pdf/2408.01869v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:How_well_do_LLMs_cite_relevant_medical_references?_An_evaluation
+__framework_and_analyses,
+    title = {How well do LLMs cite relevant medical references? An evaluation
+  framework and analyses},
+    author = {Kevin Wu, Eric Wu, Ally Cassasola, Angela Zhang, Kevin Wei, Teresa Nguyen, Sith Riantawan, Patricia Shi Riantawan, Daniel E. Ho, James Zou},
+    abstract = {  Large language models (LLMs) are currently being used to answer medical
+questions across a variety of clinical domains. Recent top-performing
+commercial LLMs, in particular, are also capable of citing sources to support
+their responses. In this paper, we ask: do the sources that LLMs generate
+actually support the claims that they make? To answer this, we propose three
+contributions. First, as expert medical annotations are an expensive and
+time-consuming bottleneck for scalable evaluation, we demonstrate that GPT-4 is
+highly accurate in validating source relevance, agreeing 88% of the time with a
+panel of medical doctors. Second, we develop an end-to-end, automated pipeline
+called \textit{SourceCheckup} and use it to evaluate five top-performing LLMs
+on a dataset of 1200 generated questions, totaling over 40K pairs of statements
+and sources. Interestingly, we find that between ~50% to 90% of LLM responses
+are not fully supported by the sources they provide. We also evaluate GPT-4
+with retrieval augmented generation (RAG) and find that, even still, around
+30\% of individual statements are unsupported, while nearly half of its
+responses are not fully supported. Third, we open-source our curated dataset of
+medical questions and expert annotations for future evaluations. Given the
+rapid pace of LLM development and the potential harms of incorrect or outdated
+medical information, it is crucial to also understand and quantify their
+capability to produce relevant, trustworthy medical references.
+},
+    year = {2024},
+    month = {02},
+    url = {http://arxiv.org/pdf/2402.02008v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:The_Sound_of_Healthcare:_Improving_Medical_Transcription_ASR_Accuracy
+__with_Large_Language_Models,
+    title = {The Sound of Healthcare: Improving Medical Transcription ASR Accuracy
+  with Large Language Models},
+    author = {Ayo Adedeji, Sarita Joshi, Brendan Doohan},
+    abstract = {  In the rapidly evolving landscape of medical documentation, transcribing
+clinical dialogues accurately is increasingly paramount. This study explores
+the potential of Large Language Models (LLMs) to enhance the accuracy of
+Automatic Speech Recognition (ASR) systems in medical transcription. Utilizing
+the PriMock57 dataset, which encompasses a diverse range of primary care
+consultations, we apply advanced LLMs to refine ASR-generated transcripts. Our
+research is multifaceted, focusing on improvements in general Word Error Rate
+(WER), Medical Concept WER (MC-WER) for the accurate transcription of essential
+medical terms, and speaker diarization accuracy. Additionally, we assess the
+role of LLM post-processing in improving semantic textual similarity, thereby
+preserving the contextual integrity of clinical dialogues. Through a series of
+experiments, we compare the efficacy of zero-shot and Chain-of-Thought (CoT)
+prompting techniques in enhancing diarization and correction accuracy. Our
+findings demonstrate that LLMs, particularly through CoT prompting, not only
+improve the diarization accuracy of existing ASR systems but also achieve
+state-of-the-art performance in this domain. This improvement extends to more
+accurately capturing medical concepts and enhancing the overall semantic
+coherence of the transcribed dialogues. These findings illustrate the dual role
+of LLMs in augmenting ASR outputs and independently excelling in transcription
+tasks, holding significant promise for transforming medical ASR systems and
+leading to more accurate and reliable patient records in healthcare settings.
+},
+    year = {2024},
+    month = {02},
+    url = {http://arxiv.org/pdf/2402.07658v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:XAIQA:_Explainer-Based_Data_Augmentation_for_Extractive_Question
+__Answering,
+    title = {XAIQA: Explainer-Based Data Augmentation for Extractive Question
+  Answering},
+    author = {Joel Stremmel, Ardavan Saeedi, Hamid Hassanzadeh, Sanjit Batra, Jeffrey Hertzberg, Jaime Murillo, Eran Halperin},
+    abstract = {  Extractive question answering (QA) systems can enable physicians and
+researchers to query medical records, a foundational capability for designing
+clinical studies and understanding patient medical history. However, building
+these systems typically requires expert-annotated QA pairs. Large language
+models (LLMs), which can perform extractive QA, depend on high quality data in
+their prompts, specialized for the application domain. We introduce a novel
+approach, XAIQA, for generating synthetic QA pairs at scale from data naturally
+available in electronic health records. Our method uses the idea of a
+classification model explainer to generate questions and answers about medical
+concepts corresponding to medical codes. In an expert evaluation with two
+physicians, our method identifies $2.2\times$ more semantic matches and
+$3.8\times$ more clinical abbreviations than two popular approaches that use
+sentence transformers to create QA pairs. In an ML evaluation, adding our QA
+pairs improves performance of GPT-4 as an extractive QA model, including on
+difficult questions. In both the expert and ML evaluations, we examine
+trade-offs between our method and sentence transformers for QA pair generation
+depending on question difficulty.
+},
+    year = {2023},
+    month = {12},
+    url = {http://arxiv.org/pdf/2312.03567v1},
+    journal = {arXiv preprint}
+}
+
+@article{arxiv:Reducing_Hallucinations_of_Medical_Multimodal_Large_Language_Models_with
+__Visual_Retrieval-Augmented_Generation,
+    title = {Reducing Hallucinations of Medical Multimodal Large Language Models with
+  Visual Retrieval-Augmented Generation},
+    author = {Yun-Wei Chu, Kai Zhang, Christopher Malon, Martin Renqiang Min},
+    abstract = {  Multimodal Large Language Models (MLLMs) have shown impressive performance in
+vision and text tasks. However, hallucination remains a major challenge,
+especially in fields like healthcare where details are critical. In this work,
+we show how MLLMs may be enhanced to support Visual RAG (V-RAG), a
+retrieval-augmented generation framework that incorporates both text and visual
+data from retrieved images. On the MIMIC-CXR chest X-ray report generation and
+Multicare medical image caption generation datasets, we show that Visual RAG
+improves the accuracy of entity probing, which asks whether a medical entities
+is grounded by an image. We show that the improvements extend both to frequent
+and rare entities, the latter of which may have less positive training data.
+Downstream, we apply V-RAG with entity probing to correct hallucinations and
+generate more clinically accurate X-ray reports, obtaining a higher RadGraph-F1
+score.
+},
+    year = {2025},
+    month = {02},
+    url = {http://arxiv.org/pdf/2502.15040v1},
+    journal = {arXiv preprint}
+}
+
